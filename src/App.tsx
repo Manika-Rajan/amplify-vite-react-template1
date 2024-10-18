@@ -34,7 +34,7 @@ function App() {
           boxSizing: 'border-box',
           textAlign: 'left'           // Left-align text in the left box
         }}>
-          <h2>Mini Super Market - Full Business Plan</h2>
+          <h2 style={{ textAlign: 'centre'}}>Mini Super Market - Full Business Plan</h2>
           <p>
             1.	List of supermarkets in and around Chandanagar and Hyderabad 
           </p>
