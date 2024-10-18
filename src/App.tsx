@@ -23,9 +23,16 @@ function App() {
         <button onClick={signOut} style={{ marginLeft: 'auto' }}>Sign out</button>
       </div>
 
-      <div style={{ display: 'flex', justifyContent: 'space-between', padding: '20px' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', padding: '20px', flexGrow: 1 }}>
         {/* Left box: Paragraphs */}
-        <div style={{ width: '60%', padding: '20px', backgroundColor: '#f0f0f0' }}>
+        <div style={{ 
+          width: '60%', 
+          padding: '20px', 
+          backgroundColor: '#f0f0f0',
+          height: '100%',               // Take up full height
+          overflowY: 'auto',            // Enable scrolling for overflow
+          boxSizing: 'border-box'       // Ensure padding doesn't affect height
+        }}>
           <h2>Mini Super Market - Full Business Plan</h2>
           <p>
             1.	List of supermarkets in and around Chandanagar and Hyderabad 
