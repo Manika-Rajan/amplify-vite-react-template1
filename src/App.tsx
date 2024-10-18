@@ -27,11 +27,12 @@ function App() {
         {/* Left box: Paragraphs */}
         <div style={{ 
           width: '60%', 
-          padding: '20px', 
+          padding: '10px 20px', 
           backgroundColor: '#f0f0f0', 
           overflowY: 'auto',            // Enable scrolling for content
           maxHeight: 'calc(100vh - 100px)', // Limit height to fit within screen (header height considered)
           boxSizing: 'border-box'
+          textAlign: 'left'           // Left-align text in the left box
         }}>
           <h2>Mini Super Market - Full Business Plan</h2>
           <p>
@@ -119,10 +120,11 @@ function App() {
         {/* Right box: Client Details */}
         <div style={{ 
           width: '35%', 
-          padding: '20px', 
+          padding: '10px 20px', 
           backgroundColor: '#e0e0e0', 
           height: '100%',                // Take up full height
           boxSizing: 'border-box'       // Ensure padding doesn't affect height
+          textAlign: 'left'           // Left-align text in the right box
         }}>
           <h2>Client Details</h2>
           <p><strong>Name:</strong> {clientDetails.name}</p>
