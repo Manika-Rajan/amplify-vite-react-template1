@@ -23,15 +23,15 @@ function App() {
         <button onClick={signOut} style={{ marginLeft: 'auto' }}>Sign out</button>
       </div>
 
-      <div style={{ display: 'flex', justifyContent: 'space-between', padding: '20px', flexGrow: 1 }}>
+        <div style={{ display: 'flex', flexGrow: 1, overflow: 'hidden' }}>
         {/* Left box: Paragraphs */}
         <div style={{ 
           width: '60%', 
           padding: '20px', 
-          backgroundColor: '#f0f0f0',
-          height: '100%',               // Take up full height
-          overflowY: 'auto',            // Enable scrolling for overflow
-          boxSizing: 'border-box'       // Ensure padding doesn't affect height
+          backgroundColor: '#f0f0f0', 
+          overflowY: 'auto',            // Enable scrolling for content
+          maxHeight: 'calc(100vh - 100px)', // Limit height to fit within screen (header height considered)
+          boxSizing: 'border-box'
         }}>
           <h2>Mini Super Market - Full Business Plan</h2>
           <p>
