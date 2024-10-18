@@ -117,7 +117,13 @@ function App() {
         </div>
 
         {/* Right box: Client Details */}
-        <div style={{ width: '35%', padding: '20px', backgroundColor: '#e0e0e0' }}>
+        <div style={{ 
+          width: '35%', 
+          padding: '20px', 
+          backgroundColor: '#e0e0e0', 
+          height: '100%',                // Take up full height
+          boxSizing: 'border-box'       // Ensure padding doesn't affect height
+        }}>
           <h2>Client Details</h2>
           <p><strong>Name:</strong> {clientDetails.name}</p>
           <p><strong>Age:</strong> {clientDetails.age}</p>
