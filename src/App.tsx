@@ -6,7 +6,7 @@ function App() {
 
   const clientDetails = {
     name: "P Mounica",
-    age: 35,
+    age: 29,
     startDate: "2024-10-17",
     endDate: "2024-11-21"
   };
@@ -63,7 +63,7 @@ function App() {
             9.	Financials: cash flow statement and balance sheet, future inflows
           </p>
                     <p>
-            &nbsp;a.	GTM strategy: Grand opening of the new store
+            &nbsp;&emsp;a.	GTM strategy: Grand opening of the new store
           </p>
                     <p>
             &nbsp;b.	Best ways to enter the business
@@ -126,7 +126,7 @@ function App() {
           boxSizing: 'border-box',       // Ensure padding doesn't affect height
           textAlign: 'left'           // Left-align text in the right box
         }}>
-          <h2>Client Details</h2>
+          <h2 style={{ textAlign: 'center'}}>Client Details</h2>
           <p><strong>Name:</strong> {clientDetails.name}</p>
           <p><strong>Age:</strong> {clientDetails.age}</p>
           <p><strong>Start Date:</strong> {clientDetails.startDate}</p>
