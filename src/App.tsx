@@ -22,7 +22,7 @@ function App() {
         alignSelf: 'flex-start', 
         width: '100%', 
         flexShrink: 0,
-        backgroundColor: rgb(134,79,202),  // This ensures it has the same color as the rest of the page
+        backgroundColor: #778899,  // This ensures it has the same color as the rest of the page
         zIndex: 1000,
         boxSizing: 'border-box',
         borderBottom: '1px solid #ccc' // Optional: border for visual separation
