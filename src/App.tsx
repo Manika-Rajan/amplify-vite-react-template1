@@ -42,6 +42,7 @@ function App() {
         paddingTop: '80px',         // Create space for the fixed header
         alignItems: 'flex-start',   
         backgroundColor: 'transparent',  
+        top: '1',
       }}>
         {/* Left box: Paragraphs */}
         <div style={{ 
