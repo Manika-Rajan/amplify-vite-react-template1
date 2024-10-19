@@ -24,7 +24,7 @@ function App() {
         top: 0,                  
         left: '50%',             
         transform: 'translateX(-50%)', // Center horizontally
-        backgroundColor: '#f0f0f0',  // Match background color
+        backgroundColor: '#f0f0f0',  // Apply the correct background color here
         zIndex: 1000,            
         boxSizing: 'border-box',
         borderBottom: '1px solid #ccc', // Optional: add a border to define the header
@@ -46,12 +46,13 @@ function App() {
         height: '100vh',             
         paddingTop: '80px',          // Adjust padding to prevent overlap with fixed header
         alignItems: 'flex-start',    
+        backgroundColor: '#f0f0f0',  // Match background color for the whole page
       }}>
         {/* Left box: Paragraphs */}
         <div style={{ 
           flexBasis: '80%',          
           padding: '10px 20px', 
-          backgroundColor: '#f0f0f0', 
+          backgroundColor: '#f0f0f0', // Left box background color
           overflowY: 'auto',          
           maxHeight: 'calc(100vh - 100px)', 
           boxSizing: 'border-box',
