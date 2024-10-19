@@ -21,7 +21,7 @@ function App() {
   return (
     <main style={{ display: 'flex', flexDirection: 'column', padding: '0', width: '80vw', margin: '0 auto', boxSizing: 'border-box' }}>
       {/* Fixed Header for Logo and Sign Out Button */}
-      <div className="header">
+      <div className="header" style={{ height: '80px', display: 'flex', alignItems: 'center', backgroundColor: '#fff', borderBottom: '1px solid #ccc' }}>
         <img 
           src="https://rajanbusinessideas.com/img/logo.png" 
           alt="Company Logo" 
@@ -36,8 +36,7 @@ function App() {
         flexGrow: 1, 
         overflow: 'hidden', 
         width: '100%', 
-        height: 'calc(100vh - 80px)', // Adjust for header height
-        paddingTop: '20px',         // Add some padding
+        height: 'calc(100vh - 80px)', // Adjusted for header height
         backgroundColor: 'transparent',
       }}>
         {/* Left box: Paragraphs */}
@@ -46,7 +45,6 @@ function App() {
           padding: '10px 20px', 
           backgroundColor: '#f0f0f0', 
           overflowY: 'auto',          
-          maxHeight: 'calc(100vh - 100px)', 
           boxSizing: 'border-box',
           textAlign: 'left',           
           marginRight: '10px',         
