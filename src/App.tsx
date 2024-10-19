@@ -20,12 +20,12 @@ function App() {
         justifyContent: 'space-between', 
         padding: '10px', 
         width: '100%', 
-        position: 'fixed',        // Make the header fixed
-        top: 0,                  // Align it to the top
-        left: 0,                 // Align it to the left
-        backgroundColor: '#fff', // Set a background color to avoid transparency issues
-        zIndex: 1000,            // Ensure it stays above other content
-        boxSizing: 'border-box'   // Prevent overflow issues with padding
+        position: 'fixed',        
+        top: 0,                  
+        left: 0,                 
+        backgroundColor: '#f0f0f0', // Match the background color of the page
+        zIndex: 1000,            
+        boxSizing: 'border-box'   
       }}>
         <img 
           src="https://rajanbusinessideas.com/img/logo.png" 
@@ -41,8 +41,9 @@ function App() {
         flexGrow: 1, 
         overflow: 'hidden', 
         width: '100%', 
-        paddingTop: '60px',         // Adjust padding to prevent overlap with fixed header
-        alignItems: 'flex-start',   // Ensure boxes don't center vertically
+        height: '100vh',             // Ensure the container takes full height of the viewport
+        paddingTop: '60px',          // Adjust padding to prevent overlap with fixed header
+        alignItems: 'flex-start',    // Ensure boxes stay at the top
       }}>
         {/* Left box: Paragraphs */}
         <div style={{ 
@@ -53,7 +54,8 @@ function App() {
           maxHeight: 'calc(100vh - 100px)', 
           boxSizing: 'border-box',
           textAlign: 'left',           
-          marginRight: '10px'          
+          marginRight: '10px',         
+          alignSelf: 'flex-start',     // Ensure the left box stays aligned at the top
         }}>
           <h2 style={{ textAlign: 'center'}}>Mini Super Market - Full Business Plan</h2>
           <details>
