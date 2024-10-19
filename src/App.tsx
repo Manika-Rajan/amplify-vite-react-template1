@@ -11,6 +11,14 @@ function App() {
     endDate: "2024-11-21"
   };
 
+    // Sample data for the updates table
+  const updates = [
+    { updateDate: "2024-10-01", status: "Completed", updatesDone: "Initial setup done" },
+    { updateDate: "2024-10-05", status: "In Progress", updatesDone: "Market research ongoing" },
+    { updateDate: "2024-10-10", status: "Pending", updatesDone: "Awaiting approvals" },
+  ];
+
+  
   return (
     <main style={{ display: 'flex', flexDirection: 'column', padding: '0', width: '80vw', margin: '0 auto', boxSizing: 'border-box' }}>
       {/* Fixed Header for Logo and Sign Out Button */}
@@ -97,7 +105,7 @@ function App() {
         </div>
       </div>
 
-            {/* Updates Table - Float at the bottom */}
+            /* Updates Table - Float at the bottom */
       <div style={{ padding: '20px', backgroundColor: '#f9f9f9', borderTop: '1px solid #ccc' }}>
         <h2 style={{ textAlign: 'center' }}>Updates</h2>
         <table style={{ width: '100%', borderCollapse: 'collapse' }}>
