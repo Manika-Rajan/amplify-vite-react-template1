@@ -27,7 +27,7 @@ function App() {
         {/* Left box: Paragraphs */}
         <div style={{ 
           width: '60%', 
-          padding: '10px 20px', 
+          padding: '10px 20px 0px 0px', 
           backgroundColor: '#f0f0f0', 
           overflowY: 'auto',            // Enable scrolling for content
           maxHeight: 'calc(100vh - 100px)', // Limit height to fit within screen (header height considered)
