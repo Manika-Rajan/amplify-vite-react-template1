@@ -37,7 +37,7 @@ function App() {
         }}>
           <h2 style={{ textAlign: 'center'}}>Mini Super Market - Full Business Plan</h2>
           <details>
-          <summary><h3 style={{ textAlign: 'left'}}>Scope of work</h3><summary>
+          <summary><h3 style={{ textAlign: 'left'}}>Scope of work</h3></summary>
           <p>1. List of supermarkets in and around Chandanagar and Hyderabad</p>
           <p>2. List of shops/shutters available to be occupied in and around Chandanagar and Hyderabad</p>
           <p>3. What products are selling the most</p>
