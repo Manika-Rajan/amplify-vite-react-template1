@@ -12,21 +12,22 @@ function App() {
   };
 
   return (
-    <main style={{ display: 'flex', flexDirection: 'column', padding: '0', width: '80vw', boxSizing: 'border-box' }}>
+    <main style={{ display: 'flex', flexDirection: 'column', padding: '0', width: '80vw', margin: '0 auto', boxSizing: 'border-box' }}>
       {/* Fixed Header for Logo and Sign Out Button */}
       <div style={{ 
         display: 'flex', 
         alignItems: 'center', 
         justifyContent: 'space-between', 
         padding: '10px', 
-        width: '80vw',                // Matching width of main container
+        width: '80vw',               
         position: 'fixed',        
         top: 0,                  
-        left: 0,                 
-        backgroundColor: '#f0f0f0',  // Match the background color of the boxes
+        left: '50%',             
+        transform: 'translateX(-50%)', // Center horizontally
+        backgroundColor: '#f0f0f0',  // Match background color
         zIndex: 1000,            
         boxSizing: 'border-box',
-        borderBottom: '1px solid #ccc' // Optional: add a border to define the header
+        borderBottom: '1px solid #ccc', // Optional: add a border to define the header
       }}>
         <img 
           src="https://rajanbusinessideas.com/img/logo.png" 
@@ -43,7 +44,7 @@ function App() {
         overflow: 'hidden', 
         width: '100%', 
         height: '100vh',             
-        paddingTop: '60px',          // Adjust padding to prevent overlap with fixed header
+        paddingTop: '80px',          // Adjust padding to prevent overlap with fixed header
         alignItems: 'flex-start',    
       }}>
         {/* Left box: Paragraphs */}
