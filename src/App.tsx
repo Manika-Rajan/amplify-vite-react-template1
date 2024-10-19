@@ -26,7 +26,7 @@ function App() {
       <div style={{ display: 'flex', flexGrow: 1, overflow: 'hidden', width: '100%' }}>
         {/* Left box: Paragraphs */}
         <div style={{ 
-          flex: 1, 
+          flexBasis: '80%',          // Set the left box to 80% width
           padding: '10px 20px', 
           backgroundColor: '#f0f0f0', 
           overflowY: 'auto',            // Enable scrolling for content
@@ -63,7 +63,7 @@ function App() {
 
         {/* Right box: Client Details */}
         <div style={{ 
-          flex: 1, 
+          flexBasis: '20%',          // Set the right box to 20% width
           padding: '10px 20px', 
           backgroundColor: '#e0e0e0', 
           height: '100%',                // Take up full height
