@@ -85,7 +85,7 @@ function App() {
           flexBasis: '20%',          
           padding: '10px 20px', 
           backgroundColor: '#e0e0e0', 
-          height: '100%',               
+          /* height: '100%',       */        
           boxSizing: 'border-box',       
           textAlign: 'left',           
         }}>
