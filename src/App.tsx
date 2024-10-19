@@ -17,17 +17,20 @@ function App() {
       <div style={{ 
         display: 'flex', 
         alignItems: 'center', 
+        justifyContent: 'space-between',  // Ensures the logo stays on the left and the button on the right
         padding: '10px', 
         alignSelf: 'flex-start',  // Stick this div to the top
-        flexShrink: 0 // Prevent this div from shrinking when the content collapses
+        width: '100%',            // Make sure it takes the full width
+        flexShrink: 0 // Prevent shrinking when content collapses
       }}>
         <img 
           src="https://rajanbusinessideas.com/img/logo.png" 
           alt="Company Logo" 
-          style={{ width: '150px', height: 'auto', marginRight: 'auto' }} 
+          style={{ width: '150px', height: 'auto' }} 
         />
         <button onClick={signOut} style={{ marginLeft: 'auto' }}>Sign out</button>
       </div>
+
 
       {/* Content area */}
       <div style={{ display: 'flex', flexGrow: 1, overflow: 'hidden', width: '100%', alignItems: 'flex-start' }}>
