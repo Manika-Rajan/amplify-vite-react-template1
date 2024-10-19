@@ -11,6 +11,12 @@ function App() {
     endDate: "2024-11-21"
   };
 
+  // Sample data for the updates table
+  const updates = [
+    { updateDate: "2024-10-01", status: "Completed", updatesDone: "Initial setup done" },
+    { updateDate: "2024-10-05", status: "In Progress", updatesDone: "Market research ongoing" },
+    { updateDate: "2024-10-10", status: "Pending", updatesDone: "Awaiting approvals" },
+  ];
   
   return (
     <main style={{ display: 'flex', flexDirection: 'column', padding: '0', width: '80vw', margin: '0 auto', boxSizing: 'border-box' }}>
@@ -97,7 +103,29 @@ function App() {
           <p><strong>End Date:</strong> {clientDetails.endDate}</p>
         </div>
       </div>
-
+      
+      {/* Updates Table - Float at the bottom */}
+      <div style={{ height: '20vh', padding: '20px', backgroundColor: '#f9f9f9', borderTop: '1px solid #ccc', flexShrink: 0 }}>
+        <h2 style={{ textAlign: 'center' }}>Updates</h2>
+        <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+          <thead>
+            <tr>
+              <th style={{ border: '1px solid #ddd', padding: '8px' }}>Update Date</th>
+              <th style={{ border: '1px solid #ddd', padding: '8px' }}>Status</th>
+              <th style={{ border: '1px solid #ddd', padding: '8px' }}>Updates Done</th>
+            </tr>
+          </thead>
+          <tbody>
+            {updates.map((update, index) => (
+              <tr key={index}>
+                <td style={{ border: '1px solid #ddd', padding: '8px' }}>{update.updateDate}</td>
+                <td style={{ border: '1px solid #ddd', padding: '8px' }}>{update.status}</td>
+                <td style={{ border: '1px solid #ddd', padding: '8px' }}>{update.updatesDone}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
 
     </main>
   );
