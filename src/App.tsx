@@ -32,12 +32,12 @@ function App() {
 
       {/* Main Content Container */}
       <div style={{ 
-        position: 'fixed',
+        position: 'relative',
         display: 'flex', 
         flexGrow: 1, 
         overflow: 'hidden', 
         width: '100%', 
-        height: '80vh',  
+        min-height: '60vh',  
         paddingTop: '80px',         // Create space for the fixed header
         alignItems: 'flex-start',   
         backgroundColor: 'transparent',  
