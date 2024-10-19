@@ -19,10 +19,13 @@ function App() {
         alignItems: 'center', 
         justifyContent: 'space-between', 
         padding: '10px', 
-        alignSelf: 'flex-start', 
+        /* alignSelf: 'flex-start', */
         width: '100%', 
-        flexShrink: 0,
-        backgroundColor: '#778899',  // This ensures it has the same color as the rest of the page
+        position: 'fixed',
+        top: 0, 
+        left: 0,
+        /* flexShrink: 0, */
+        backgroundColor: '#7788f5',  // This ensures it has the same color as the rest of the page
         zIndex: 1000,
         boxSizing: 'border-box',
         borderBottom: '1px solid #ccc' // Optional: border for visual separation
