@@ -12,13 +12,14 @@ function App() {
   };
 
   return (
-    <main style={{ display: 'flex', flexDirection: 'column', padding: '0', width: '80vw', boxSizing: 'border-box' }}>
+    <main style={{ display: 'flex', flexDirection: 'column', padding: '0', width: '80vw', boxSizing: 'border-box', height: '100vh' }}>
       {/* Logo and Sign out */}
       <div style={{ 
         display: 'flex', 
         alignItems: 'center', 
         padding: '10px', 
-        alignSelf: 'flex-start'  // Stick this div to the top
+        alignSelf: 'flex-start',  // Stick this div to the top
+        flexShrink: 0 // Prevent this div from shrinking when the content collapses
       }}>
         <img 
           src="https://rajanbusinessideas.com/img/logo.png" 
@@ -28,7 +29,8 @@ function App() {
         <button onClick={signOut} style={{ marginLeft: 'auto' }}>Sign out</button>
       </div>
 
-      <div style={{ display: 'flex', flexGrow: 1, overflow: 'hidden', width: '100%' }}>
+      {/* Content area */}
+      <div style={{ display: 'flex', flexGrow: 1, overflow: 'hidden', width: '100%', alignItems: 'flex-start' }}>
         {/* Left box: Paragraphs */}
         <div style={{ 
           flexBasis: '80%',          // Set the left box to 80% width
@@ -82,6 +84,7 @@ function App() {
           height: '100%',                // Take up full height
           boxSizing: 'border-box',       // Ensure padding doesn't affect height
           textAlign: 'left',           // Left-align text in the right box
+          alignSelf: 'flex-start',     // Make sure it sticks to the top
         }}>
           <h2 style={{ textAlign: 'center'}}>Client Details</h2>
           <p><strong>Name:</strong> {clientDetails.name}</p>
