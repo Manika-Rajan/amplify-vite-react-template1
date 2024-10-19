@@ -37,7 +37,8 @@ function App() {
         flexGrow: 1, 
         overflow: 'hidden', 
         width: '100%', 
-        min-height: '60vh',  
+        height: '60vh',  
+        minheight: '60vh',  
         paddingTop: '80px',         // Create space for the fixed header
         alignItems: 'flex-start',   
         backgroundColor: 'transparent',  
