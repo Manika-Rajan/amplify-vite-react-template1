@@ -38,7 +38,7 @@ function App() {
         overflow: 'hidden', 
         width: '100%', 
         height: '60vh',  
-        minheight: '60vh',  
+        minHeight: '60vh',  
         paddingTop: '80px',         // Create space for the fixed header
         alignItems: 'flex-start',   
         backgroundColor: 'transparent',  
