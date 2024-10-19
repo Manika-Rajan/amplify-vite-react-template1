@@ -26,8 +26,8 @@ function App() {
         <div style={{ display: 'flex', flexGrow: 1, overflow: 'hidden' }}>
         {/* Left box: Paragraphs */}
         <div style={{ 
-          width: '60%', 
-          padding: '10px 20px 0px 0px', 
+          width: '80%', 
+          padding: '10px 20px 10px 10px', 
           backgroundColor: '#f0f0f0', 
           overflowY: 'auto',            // Enable scrolling for content
           maxHeight: 'calc(100vh - 100px)', // Limit height to fit within screen (header height considered)
