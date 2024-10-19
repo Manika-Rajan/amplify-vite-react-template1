@@ -37,7 +37,7 @@ function App() {
         flexGrow: 1, 
         overflow: 'hidden', 
         width: '100%', 
-        height: '60vh',  
+        height: '100vh',  
         minHeight: '60vh',  
         paddingTop: '80px',         // Create space for the fixed header
         alignItems: 'flex-start',   
@@ -107,8 +107,10 @@ function App() {
           <p><strong>End Date:</strong> {clientDetails.endDate}</p>
         </div>
       </div>
-      
-      {/* Updates Table - Float at the bottom */}
+
+    </main>
+    
+          {/* Updates Table - Float at the bottom */}
       <div style={{ height: '20vh', padding: '20px', backgroundColor: '#f9f9f9', borderTop: '1px solid #ccc', flexShrink: 0 }}>
         <h2 style={{ textAlign: 'center' }}>Updates</h2>
         <table style={{ width: '100%', borderCollapse: 'collapse' }}>
@@ -130,8 +132,6 @@ function App() {
           </tbody>
         </table>
       </div>
-
-    </main>
   );
 }
 
