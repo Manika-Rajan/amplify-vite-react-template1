@@ -130,6 +130,18 @@ function App() {
           </tbody>
         </table>
       </div>
+
+      
+            {/* Fixed Header for Logo and Sign Out Button */}
+      <div className="header">
+        <img 
+          src="https://rajanbusinessideas.com/img/logo.png" 
+          alt="Company Logo" 
+          style={{ width: '150px', height: 'auto' }} 
+        />
+        <button onClick={signOut} style={{ marginLeft: 'auto' }}>Sign out</button>
+      </div>
+
       
     </main>
     
