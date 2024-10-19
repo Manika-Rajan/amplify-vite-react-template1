@@ -12,82 +12,79 @@ function App() {
   };
 
   return (
-    <main style={{ display: 'flex', flexDirection: 'column', padding: '0', width: '80vw', boxSizing: 'border-box', height: '100vh' }}>
-      {/* Logo and Sign out */}
+    <main style={{ display: 'flex', flexDirection: 'column', padding: '0', width: '80vw', boxSizing: 'border-box' }}>
+      {/* Fixed Header for Logo and Sign Out Button */}
       <div style={{ 
         display: 'flex', 
         alignItems: 'center', 
-        justifyContent: 'space-between',  // Ensures the logo stays on the left and the button on the right
+        justifyContent: 'space-between', 
         padding: '10px', 
-        alignSelf: 'flex-start',  // Stick this div to the top
-        width: '100%',            // Make sure it takes the full width
-        flexShrink: 0 // Prevent shrinking when content collapses
+        alignSelf: 'flex-start', 
+        width: '100%', 
+        position: 'fixed',        // Make the header fixed
+        top: 0,                  // Align it to the top
+        backgroundColor: '#fff', // Set a background color to avoid transparency issues
+        zIndex: 1000             // Ensure it stays above other content
       }}>
         <img 
           src="https://rajanbusinessideas.com/img/logo.png" 
           alt="Company Logo" 
           style={{ width: '150px', height: 'auto' }} 
         />
-        <button onClick={signOut} style={{ marginLeft: 'auto' }}>Sign out</button>
+        <button onClick={signOut}>Sign out</button>
       </div>
 
-
-      {/* Content area */}
-      <div style={{ display: 'flex', flexGrow: 1, overflow: 'hidden', width: '100%', alignItems: 'flex-start' }}>
+      {/* Main Content Container */}
+      <div style={{ display: 'flex', flexGrow: 1, overflow: 'hidden', width: '100%', paddingTop: '60px' }}>
         {/* Left box: Paragraphs */}
         <div style={{ 
-          flexBasis: '80%',          // Set the left box to 80% width
+          flexBasis: '80%',          
           padding: '10px 20px', 
           backgroundColor: '#f0f0f0', 
-          overflowY: 'auto',            // Enable scrolling for content
-          maxHeight: 'calc(100vh - 100px)', // Limit height to fit within screen (header height considered)
+          overflowY: 'auto',          
+          maxHeight: 'calc(100vh - 100px)', 
           boxSizing: 'border-box',
-          textAlign: 'left',            // Left-align text in the left box
-          marginRight: '10px',
-          alignSelf: 'flex-start',      // Ensure it aligns to the top
+          textAlign: 'left',           
+          marginRight: '10px'          
         }}>
           <h2 style={{ textAlign: 'center'}}>Mini Super Market - Full Business Plan</h2>
-          
           <details>
-            <summary style={{ fontSize: '18px', fontWeight: 'bold', cursor: 'pointer' }}>Scope of work</summary>
-            <div style={{ marginLeft: '20px' }}>
-              <p>1. List of supermarkets in and around Chandanagar and Hyderabad</p>
-              <p>2. List of shops/shutters available to be occupied in and around Chandanagar and Hyderabad</p>
-              <p>3. What products are selling the most</p>
-              <p>4. What products a mini supermarket generally holds</p>
-              <p>5. Client prefers non-expiring products like ladies' ornaments, etc.</p>
-              <p>6. Client prefers a location in Chandanagar, close to their house</p>
-              <p>7. Where to source products from: list of dealers, suppliers, stockists, and profit margins</p>
-              <p>8. List of registrations and permissions required, along with their costs</p>
-              <p>9. Financials: cash flow statement and balance sheet, future inflows</p>
-              <p>&emsp;&emsp;a. GTM strategy: Grand opening of the new store</p>
-              <p>&emsp;&emsp;b. Best ways to enter the business</p>
-              <p>10. Cost breakdown: rent, employee salaries, infrastructure, furniture, electricity bill, new AC units</p>
-              <p>11. Insurance for the supermarket and store</p>
-              <p>12. Initial investment required, with a detailed breakdown</p>
-              <p>13. Logistics and stock houses required, along with their costs</p>
-              <p>&emsp;&emsp;a. Fast-moving products: stock management</p>
-              <p>&emsp;&emsp;b. Ambiance maintenance: AC, scent, etc.</p>
-              <p>&emsp;&emsp;c. Neatness: maintaining cleanliness through employees</p>
-              <p>&emsp;&emsp;d. Festival discounts</p>
-              <p>&emsp;&emsp;e. Combo offers: negotiating discounts with suppliers and passing them to customers</p>
-              <p>15. Packing material: value-added packing material details</p>
-              <p>&emsp;&emsp;a. Own packing vs. dealers packing (cost wise analysis)</p>
-              <p>16. Swiggy, Instamart, etc. tie-up options</p>
-              <p>17. Come up with options for in-house brands like "Karachi Bakery", etc.</p>
-            </div>
+          <summary><h3 style={{ textAlign: 'left'}}>Scope of work</h3></summary>
+          <p>1. List of supermarkets in and around Chandanagar and Hyderabad</p>
+          <p>2. List of shops/shutters available to be occupied in and around Chandanagar and Hyderabad</p>
+          <p>3. What products are selling the most</p>
+          <p>4. What products a mini supermarket generally holds</p>
+          <p>5. Client prefers non-expiring products like ladies' ornaments, etc.</p>
+          <p>6. Client prefers a location in Chandanagar, close to their house</p>
+          <p>7. Where to source products from: list of dealers, suppliers, stockists, and profit margins</p>
+          <p>8. List of registrations and permissions required, along with their costs</p>
+          <p>9. Financials: cash flow statement and balance sheet, future inflows</p>
+          <p>&emsp;&emsp;a. GTM strategy: Grand opening of the new store</p>
+          <p>&emsp;&emsp;b. Best ways to enter the business</p>
+          <p>10. Cost breakdown: rent, employee salaries, infrastructure, furniture, electricity bill, new AC units</p>
+          <p>11. Insurance for the supermarket and store</p>
+          <p>12. Initial investment required, with a detailed breakdown</p>
+          <p>13. Logistics and stock houses required, along with their costs</p>
+          <p>&emsp;&emsp;a. Fast-moving products: stock management</p>
+          <p>&emsp;&emsp;b. Ambiance maintenance: AC, scent, etc.</p>
+          <p>&emsp;&emsp;c. Neatness: maintaining cleanliness through employees</p>
+          <p>&emsp;&emsp;d. Festival discounts</p>
+          <p>&emsp;&emsp;e. Combo offers: negotiating discounts with suppliers and passing them to customers</p>
+          <p>15. Packing material: value-added packing material details</p>
+          <p>&emsp;&emsp;a. Own packing vs. dealers packing (cost wise analysis)</p>
+          <p>16. Swiggy, Instamart, etc. tie-up options</p>
+          <p>17. Come up with options for in-house brands like "Karachi Bakery", etc.</p>
           </details>
         </div>
 
         {/* Right box: Client Details */}
         <div style={{ 
-          flexBasis: '20%',          // Set the right box to 20% width
+          flexBasis: '20%',          
           padding: '10px 20px', 
           backgroundColor: '#e0e0e0', 
-          height: '100%',                // Take up full height
-          boxSizing: 'border-box',       // Ensure padding doesn't affect height
-          textAlign: 'left',           // Left-align text in the right box
-          alignSelf: 'flex-start',     // Make sure it sticks to the top
+          height: '100%',               
+          boxSizing: 'border-box',       
+          textAlign: 'left',           
         }}>
           <h2 style={{ textAlign: 'center'}}>Client Details</h2>
           <p><strong>Name:</strong> {clientDetails.name}</p>
