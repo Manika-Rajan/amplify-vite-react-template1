@@ -1,5 +1,5 @@
 import { useAuthenticator } from '@aws-amplify/ui-react';
-import './App.css'; // Assuming you have a CSS file for additional styles
+import './App.css'; // Ensure the CSS file is being used
 
 function App() {
   const { signOut } = useAuthenticator();
@@ -14,21 +14,7 @@ function App() {
   return (
     <main style={{ display: 'flex', flexDirection: 'column', padding: '0', width: '80vw', margin: '0 auto', boxSizing: 'border-box' }}>
       {/* Fixed Header for Logo and Sign Out Button */}
-      <div style={{ 
-        display: 'flex', 
-        alignItems: 'center', 
-        justifyContent: 'space-between', 
-        padding: '10px', 
-        width: '80vw',               
-        position: 'fixed',        
-        top: 0,                  
-        left: '50%',             
-        transform: 'translateX(-50%)', // Center horizontally
-        backgroundColor: '#f0f0f0',  // Apply the correct background color here
-        zIndex: 1000,            
-        boxSizing: 'border-box',
-        borderBottom: '1px solid #ccc', // Optional: add a border to define the header
-      }}>
+      <div className="header">
         <img 
           src="https://rajanbusinessideas.com/img/logo.png" 
           alt="Company Logo" 
@@ -44,15 +30,15 @@ function App() {
         overflow: 'hidden', 
         width: '100%', 
         height: '100vh',             
-        paddingTop: '80px',          // Adjust padding to prevent overlap with fixed header
-        alignItems: 'flex-start',    
-        backgroundColor: '#f0f0f0',  // Match background color for the whole page
+        paddingTop: '80px',         // Create space for the fixed header
+        alignItems: 'flex-start',   
+        backgroundColor: '#f0f0f0',  
       }}>
         {/* Left box: Paragraphs */}
         <div style={{ 
           flexBasis: '80%',          
           padding: '10px 20px', 
-          backgroundColor: '#f0f0f0', // Left box background color
+          backgroundColor: '#f0f0f0', 
           overflowY: 'auto',          
           maxHeight: 'calc(100vh - 100px)', 
           boxSizing: 'border-box',
