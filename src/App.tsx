@@ -19,23 +19,31 @@ function App() {
         alignItems: 'center', 
         justifyContent: 'space-between', 
         padding: '10px', 
-        alignSelf: 'flex-start', 
         width: '100%', 
         position: 'fixed',        // Make the header fixed
         top: 0,                  // Align it to the top
+        left: 0,                 // Align it to the left
         backgroundColor: '#fff', // Set a background color to avoid transparency issues
-        zIndex: 1000             // Ensure it stays above other content
+        zIndex: 1000,            // Ensure it stays above other content
+        boxSizing: 'border-box'   // Prevent overflow issues with padding
       }}>
         <img 
           src="https://rajanbusinessideas.com/img/logo.png" 
           alt="Company Logo" 
           style={{ width: '150px', height: 'auto' }} 
         />
-        <button onClick={signOut}>Sign out</button>
+        <button onClick={signOut} style={{ marginLeft: 'auto' }}>Sign out</button>
       </div>
 
       {/* Main Content Container */}
-      <div style={{ display: 'flex', flexGrow: 1, overflow: 'hidden', width: '100%', paddingTop: '60px' }}>
+      <div style={{ 
+        display: 'flex', 
+        flexGrow: 1, 
+        overflow: 'hidden', 
+        width: '100%', 
+        paddingTop: '60px',         // Adjust padding to prevent overlap with fixed header
+        alignItems: 'flex-start',   // Ensure boxes don't center vertically
+      }}>
         {/* Left box: Paragraphs */}
         <div style={{ 
           flexBasis: '80%',          
@@ -49,7 +57,12 @@ function App() {
         }}>
           <h2 style={{ textAlign: 'center'}}>Mini Super Market - Full Business Plan</h2>
           <details>
-          <summary><h3 style={{ textAlign: 'left'}}>Scope of work</h3></summary>
+          <summary>
+            {/* Ensure summary and heading stay on the same line */}
+            <span style={{ display: 'inline' }}>
+              <h3 style={{ display: 'inline', margin: 0 }}>Scope of work</h3>
+            </span>
+          </summary>
           <p>1. List of supermarkets in and around Chandanagar and Hyderabad</p>
           <p>2. List of shops/shutters available to be occupied in and around Chandanagar and Hyderabad</p>
           <p>3. What products are selling the most</p>
