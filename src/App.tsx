@@ -19,7 +19,7 @@ function App() {
   ];
   
   return (
-    <main style={{ height: '920px', display: 'flex', flexDirection: 'column', padding: '0', width: '80vw', margin: '0 auto', boxSizing: 'border-box' }}>
+    <main style={{ height: '820px', display: 'flex', flexDirection: 'column', padding: '0', width: '80vw', margin: '0 auto', boxSizing: 'border-box' }}>
       {/* Fixed Header for Logo and Sign Out Button */}
       <div className="header">
         <img 
