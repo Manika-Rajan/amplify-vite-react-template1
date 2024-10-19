@@ -33,6 +33,7 @@ function App() {
           maxHeight: 'calc(100vh - 100px)', // Limit height to fit within screen (header height considered)
           boxSizing: 'border-box',
           textAlign: 'left',            // Left-align text in the left box
+          marginRight: '10px'           // Add space between left and right box
         }}>
           <h2 style={{ textAlign: 'center'}}>Mini Super Market - Full Business Plan</h2>
           <p>1. List of supermarkets in and around Chandanagar and Hyderabad</p>
