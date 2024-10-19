@@ -96,6 +96,29 @@ function App() {
           <p><strong>End Date:</strong> {clientDetails.endDate}</p>
         </div>
       </div>
+
+            {/* Updates Table - Float at the bottom */}
+      <div style={{ padding: '20px', backgroundColor: '#f9f9f9', borderTop: '1px solid #ccc' }}>
+        <h2 style={{ textAlign: 'center' }}>Updates</h2>
+        <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+          <thead>
+            <tr>
+              <th style={{ border: '1px solid #ddd', padding: '8px' }}>Update Date</th>
+              <th style={{ border: '1px solid #ddd', padding: '8px' }}>Status</th>
+              <th style={{ border: '1px solid #ddd', padding: '8px' }}>Updates Done</th>
+            </tr>
+          </thead>
+          <tbody>
+            {updates.map((update, index) => (
+              <tr key={index}>
+                <td style={{ border: '1px solid #ddd', padding: '8px' }}>{update.updateDate}</td>
+                <td style={{ border: '1px solid #ddd', padding: '8px' }}>{update.status}</td>
+                <td style={{ border: '1px solid #ddd', padding: '8px' }}>{update.updatesDone}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </main>
   );
 }
