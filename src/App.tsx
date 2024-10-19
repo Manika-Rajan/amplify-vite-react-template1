@@ -36,10 +36,9 @@ function App() {
         flexGrow: 1, 
         overflow: 'hidden', 
         width: '100%', 
-        height: '100vh',             
-        paddingTop: '80px',         // Create space for the fixed header
-        alignItems: 'flex-start',   
-        backgroundColor: 'transparent',  
+        height: 'calc(100vh - 80px)', // Adjust for header height
+        paddingTop: '20px',         // Add some padding
+        backgroundColor: 'transparent',
       }}>
         {/* Left box: Paragraphs */}
         <div style={{ 
@@ -51,7 +50,8 @@ function App() {
           boxSizing: 'border-box',
           textAlign: 'left',           
           marginRight: '10px',         
-          alignSelf: 'flex-start',     
+          display: 'flex',
+          flexDirection: 'column',
         }}>
           <h2 style={{ textAlign: 'center'}}>Mini Super Market - Full Business Plan</h2>
           <details>
@@ -62,6 +62,7 @@ function App() {
             </summary>
             {/* Add content here */}
           </details>
+          {/* Additional content can go here */}
         </div>
 
         {/* Right box: Client Details */}
@@ -71,6 +72,8 @@ function App() {
           backgroundColor: '#e0e0e0', 
           boxSizing: 'border-box',       
           textAlign: 'left',           
+          display: 'flex',
+          flexDirection: 'column',
         }}>
           <h2 style={{ textAlign: 'center'}}>Client Details</h2>
           <p><strong>Name:</strong> {clientDetails.name}</p>
@@ -80,7 +83,7 @@ function App() {
         </div>
       </div>
 
-      {/* Updates Table */}
+      {/* Updates Table - Float at the bottom */}
       <div style={{ padding: '20px', backgroundColor: '#f9f9f9', borderTop: '1px solid #ccc' }}>
         <h2 style={{ textAlign: 'center' }}>Updates</h2>
         <table style={{ width: '100%', borderCollapse: 'collapse' }}>
