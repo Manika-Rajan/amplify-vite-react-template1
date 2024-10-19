@@ -13,8 +13,13 @@ function App() {
 
   return (
     <main style={{ display: 'flex', flexDirection: 'column', padding: '0', width: '80vw', boxSizing: 'border-box' }}>
-      {/* Logo */}
-      <div style={{ display: 'flex', alignItems: 'center', padding: '10px' }}>
+      {/* Logo and Sign out */}
+      <div style={{ 
+        display: 'flex', 
+        alignItems: 'center', 
+        padding: '10px', 
+        alignSelf: 'flex-start'  // Stick this div to the top
+      }}>
         <img 
           src="https://rajanbusinessideas.com/img/logo.png" 
           alt="Company Logo" 
@@ -67,8 +72,6 @@ function App() {
               <p>17. Come up with options for in-house brands like "Karachi Bakery", etc.</p>
             </div>
           </details>
-
-          {/* Add more details sections as needed */}
         </div>
 
         {/* Right box: Client Details */}
