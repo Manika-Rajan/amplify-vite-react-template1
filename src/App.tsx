@@ -36,6 +36,8 @@ function App() {
           marginRight: '10px'           // Add space between left and right box
         }}>
           <h2 style={{ textAlign: 'center'}}>Mini Super Market - Full Business Plan</h2>
+          <details>
+          <summary><h3 style={{ textAlign: 'left'}}>Scope of work</h3><summary>
           <p>1. List of supermarkets in and around Chandanagar and Hyderabad</p>
           <p>2. List of shops/shutters available to be occupied in and around Chandanagar and Hyderabad</p>
           <p>3. What products are selling the most</p>
@@ -60,6 +62,7 @@ function App() {
           <p>&emsp;&emsp;a. Own packing vs. dealers packing (cost wise analysis)</p>
           <p>16. Swiggy, Instamart, etc. tie-up options</p>
           <p>17. Come up with options for in-house brands like "Karachi Bakery", etc.</p>
+          </details>
         </div>
 
         {/* Right box: Client Details */}
