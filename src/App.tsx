@@ -1,5 +1,5 @@
 import { useAuthenticator } from '@aws-amplify/ui-react';
-import './App.css'; // Ensure the CSS file is being used
+import './App.css';
 
 function App() {
   const { signOut } = useAuthenticator();
@@ -19,14 +19,13 @@ function App() {
         alignItems: 'center', 
         justifyContent: 'space-between', 
         padding: '10px', 
+        alignSelf: 'flex-start', 
         width: '100%', 
-        position: 'fixed', 
-        top: 0, 
-        left: 0, 
-        backgroundColor: '#f0f0f0', /* Ensure the background color is applied here */
+        flexShrink: 0,
+        backgroundColor: '#f0f0f0',  // This ensures it has the same color as the rest of the page
         zIndex: 1000,
         boxSizing: 'border-box',
-        borderBottom: '1px solid #ccc' /* Optional: border for visual separation */
+        borderBottom: '1px solid #ccc' // Optional: border for visual separation
       }}>
         <img 
           src="https://rajanbusinessideas.com/img/logo.png" 
@@ -43,7 +42,7 @@ function App() {
         overflow: 'hidden', 
         width: '100%', 
         height: '100vh',             
-        paddingTop: '80px',         // Create space for the fixed header
+        paddingTop: '80px',  // Create space for the fixed header
         alignItems: 'flex-start',   
         backgroundColor: '#f0f0f0',  
       }}>
