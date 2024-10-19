@@ -19,13 +19,14 @@ function App() {
         alignItems: 'center', 
         justifyContent: 'space-between', 
         padding: '10px', 
-        width: '100%', 
+        width: '80vw',                // Matching width of main container
         position: 'fixed',        
         top: 0,                  
         left: 0,                 
-        backgroundColor: '#f0f0f0', // Match the background color of the page
+        backgroundColor: '#f0f0f0',  // Match the background color of the boxes
         zIndex: 1000,            
-        boxSizing: 'border-box'   
+        boxSizing: 'border-box',
+        borderBottom: '1px solid #ccc' // Optional: add a border to define the header
       }}>
         <img 
           src="https://rajanbusinessideas.com/img/logo.png" 
@@ -41,9 +42,9 @@ function App() {
         flexGrow: 1, 
         overflow: 'hidden', 
         width: '100%', 
-        height: '100vh',             // Ensure the container takes full height of the viewport
+        height: '100vh',             
         paddingTop: '60px',          // Adjust padding to prevent overlap with fixed header
-        alignItems: 'flex-start',    // Ensure boxes stay at the top
+        alignItems: 'flex-start',    
       }}>
         {/* Left box: Paragraphs */}
         <div style={{ 
@@ -55,12 +56,11 @@ function App() {
           boxSizing: 'border-box',
           textAlign: 'left',           
           marginRight: '10px',         
-          alignSelf: 'flex-start',     // Ensure the left box stays aligned at the top
+          alignSelf: 'flex-start',     
         }}>
           <h2 style={{ textAlign: 'center'}}>Mini Super Market - Full Business Plan</h2>
           <details>
           <summary>
-            {/* Ensure summary and heading stay on the same line */}
             <span style={{ display: 'inline' }}>
               <h3 style={{ display: 'inline', margin: 0 }}>Scope of work</h3>
             </span>
