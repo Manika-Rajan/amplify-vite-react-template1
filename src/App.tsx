@@ -14,7 +14,20 @@ function App() {
   return (
     <main style={{ display: 'flex', flexDirection: 'column', padding: '0', width: '80vw', margin: '0 auto', boxSizing: 'border-box' }}>
       {/* Fixed Header for Logo and Sign Out Button */}
-      <div className="header">
+      <div style={{ 
+        display: 'flex', 
+        alignItems: 'center', 
+        justifyContent: 'space-between', 
+        padding: '10px', 
+        width: '100%', 
+        position: 'fixed', 
+        top: 0, 
+        left: 0, 
+        backgroundColor: '#f0f0f0', /* Ensure the background color is applied here */
+        zIndex: 1000,
+        boxSizing: 'border-box',
+        borderBottom: '1px solid #ccc' /* Optional: border for visual separation */
+      }}>
         <img 
           src="https://rajanbusinessideas.com/img/logo.png" 
           alt="Company Logo" 
