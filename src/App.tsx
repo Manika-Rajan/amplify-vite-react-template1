@@ -53,7 +53,8 @@ function App() {
           boxSizing: 'border-box',
           textAlign: 'left',           
           marginRight: '10px',         
-          alignSelf: 'flex-start',     
+          alignSelf: 'flex-start',  
+          top: '0',
         }}>
           <h2 style={{ textAlign: 'center'}}>Mini Super Market - Full Business Plan</h2>
           <details>
