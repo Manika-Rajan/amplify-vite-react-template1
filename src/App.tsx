@@ -1,5 +1,5 @@
 import { useAuthenticator } from '@aws-amplify/ui-react';
-import './App.css';
+import './App.css'; // Ensure the CSS file is being used
 
 function App() {
   const { signOut } = useAuthenticator();
@@ -14,22 +14,7 @@ function App() {
   return (
     <main style={{ display: 'flex', flexDirection: 'column', padding: '0', width: '80vw', margin: '0 auto', boxSizing: 'border-box' }}>
       {/* Fixed Header for Logo and Sign Out Button */}
-      <div style={{ 
-        display: 'flex', 
-        alignItems: 'center', 
-        justifyContent: 'space-between', 
-        padding: '10px', 
-        /* alignSelf: 'flex-start', */
-        width: '80%', 
-        position: 'fixed',
-        top: 0, 
-        left: 0,
-        /* flexShrink: 0, */
-        backgroundColor: '#9345fe',  // This ensures it has the same color as the rest of the page
-        zIndex: 1000,
-        boxSizing: 'border-box',
-        borderBottom: '1px solid #ccc' // Optional: border for visual separation
-      }}>
+      <div className="header">
         <img 
           src="https://rajanbusinessideas.com/img/logo.png" 
           alt="Company Logo" 
@@ -45,7 +30,7 @@ function App() {
         overflow: 'hidden', 
         width: '100%', 
         height: '100vh',             
-        paddingTop: '80px',  // Create space for the fixed header
+        paddingTop: '80px',         // Create space for the fixed header
         alignItems: 'flex-start',   
         backgroundColor: '#f0f0f0',  
       }}>
