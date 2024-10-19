@@ -12,7 +12,7 @@ function App() {
   };
 
   return (
-    <main style={{ display: 'flex', flexDirection: 'column' }}>
+    <main style={{ display: 'flex', width: '80%', flexDirection: 'column' }}>
       {/* Logo */}
       <div style={{ display: 'flex', alignItems: 'center', padding: '10px' }}>
         <img 
