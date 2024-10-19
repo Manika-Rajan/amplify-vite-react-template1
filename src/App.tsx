@@ -13,9 +13,9 @@ function App() {
 
   // Sample data for the updates table
   const updates = [
-    { updateDate: "2024-10-01", status: "Completed", updatesDone: "Initial setup done" },
-    { updateDate: "2024-10-05", status: "In Progress", updatesDone: "Market research ongoing" },
-    { updateDate: "2024-10-10", status: "Pending", updatesDone: "Awaiting approvals" },
+    { updateDate: "2024-10-20", status: "In Progress", updatesDone: "List of Super Markets" },
+    { updateDate: "2024-10-24", status: "", updatesDone: "" },
+    { updateDate: "2024-10-28", status: "", updatesDone: "" },
   ];
   
   return (
