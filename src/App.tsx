@@ -63,10 +63,10 @@ function App() {
             9.	Financials: cash flow statement and balance sheet, future inflows
           </p>
                     <p>
-            &nbsp;&emsp;a.	GTM strategy: Grand opening of the new store
+            &emsp;&emsp;a.	GTM strategy: Grand opening of the new store
           </p>
                     <p>
-            &nbsp;b.	Best ways to enter the business
+            &emsp;&emsp;b.	Best ways to enter the business
           </p>
                     <p>
             10.	Cost breakdown: rent, employee salaries, infrastructure, furniture, electricity bill, new AC units
@@ -81,23 +81,23 @@ function App() {
             13.	Logistics and stock houses required, along with their costs
           </p>
                     <p>
-            a.	Fast-moving products: stock management
+            &emsp;&emsp;a.	Fast-moving products: stock management
           </p>
           
                     <p>
-            b.	Ambiance maintenance: AC, scent, etc.
+            &emsp;&emsp;b.	Ambiance maintenance: AC, scent, etc.
           </p>
           
                     <p>
-            c.	Neatness: maintaining cleanliness through employees
+            &emsp;&emsp;c.	Neatness: maintaining cleanliness through employees
           </p>
           
                     <p>
-            d.	Festival discounts
+            &emsp;&emsp;d.	Festival discounts
           </p>
           
                     <p>
-            e.	Combo offers: negotiating discounts with suppliers and passing them to customers
+            &emsp;&emsp;e.	Combo offers: negotiating discounts with suppliers and passing them to customers
           </p>
           
                     <p>
@@ -105,7 +105,7 @@ function App() {
           </p>
           
                     <p>
-            a.	Own packing vs. dealers packing (cost wise analysis)
+            &emsp;&emsp;a.	Own packing vs. dealers packing (cost wise analysis)
           </p>
           
                     <p>
