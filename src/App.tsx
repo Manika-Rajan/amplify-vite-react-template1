@@ -32,7 +32,7 @@ function App() {
 
       {/* Main Content Container */}
       <div style={{ 
-        position: relative;
+        position: 'relative',
         display: 'flex', 
         flexGrow: 1, 
         overflow: 'hidden', 
