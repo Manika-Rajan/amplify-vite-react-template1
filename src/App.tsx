@@ -98,11 +98,7 @@ function App() {
         </div>
       </div>
 
-      {/* Updates Table - Float at the bottom */}
-      <div style={{ padding: '20px', backgroundColor: '#f9f9f9', borderTop: '1px solid #ccc' }}>
-        <h2 style={{ textAlign: 'center' }}>Updates</h2>
 
-      </div>
     </main>
   );
 }
