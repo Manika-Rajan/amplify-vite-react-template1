@@ -20,12 +20,12 @@ function App() {
         justifyContent: 'space-between', 
         padding: '10px', 
         /* alignSelf: 'flex-start', */
-        width: '100%', 
+        width: '80%', 
         position: 'fixed',
         top: 0, 
         left: 0,
         /* flexShrink: 0, */
-        backgroundColor: '#7788f5',  // This ensures it has the same color as the rest of the page
+        backgroundColor: '#9345fe',  // This ensures it has the same color as the rest of the page
         zIndex: 1000,
         boxSizing: 'border-box',
         borderBottom: '1px solid #ccc' // Optional: border for visual separation
