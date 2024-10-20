@@ -16,6 +16,15 @@ function App() {
     { updateDate: "2024-10-20", status: "In Progress", updatesDone: "List of Super Markets" },
     { updateDate: "2024-10-24", status: "", updatesDone: "" },
     { updateDate: "2024-10-28", status: "", updatesDone: "" },
+    { updateDate: "2024-11-01", status: "", updatesDone: "" },
+    { updateDate: "2024-11-05", status: "", updatesDone: "" },
+    { updateDate: "2024-11-09", status: "", updatesDone: "" },
+    { updateDate: "2024-11-13", status: "", updatesDone: "" },
+    { updateDate: "2024-11-17", status: "", updatesDone: "" },
+    { updateDate: "2024-11-21", status: "", updatesDone: "" },
+    { updateDate: "Meeting 1", status: "", updatesDone: "" },
+    { updateDate: "Meeting 2", status: "", updatesDone: "" },
+    { updateDate: "Meeting 3", status: "", updatesDone: "" },
   ];
   
   return (
