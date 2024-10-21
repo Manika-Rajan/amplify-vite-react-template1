@@ -122,25 +122,27 @@ function App() {
           <table>
             <thead>
               <tr>
-                <th>Shop Name</th>
-                <th>Location</th>
-                <th>Size (sq ft)</th>
-                <th>Rent Price</th>
+                <th>Address</th>
+                <th>Pincode</th>
+                <th>Rent per sq ft</th>
+                <th>Owner's Name</th>
+                <th>Total Rent</th>
               </tr>
             </thead>
             <tbody>
               {shopData.length > 0 ? (
                 shopData.map((shop, index) => (
                   <tr key={index}>
-                    <td>{shop.shopName}</td>
-                    <td>{shop.location}</td>
-                    <td>{shop.size}</td>
-                    <td>{shop.rentPrice}</td>
+                    <td>{shop.Address}</td>
+                    <td>{shop.Pincode}</td>
+                    <td>{shop.Rent per sq ft}</td>
+                    <td>{shop.Owner's Name}</td>
+                    <td>{shop.Total Rent}</td>
                   </tr>
                 ))
               ) : (
                 <tr>
-                  <td colSpan="4">Loading data...</td>
+                  <td colSpan="5">Loading data...</td>
                 </tr>
               )}
             </tbody>
