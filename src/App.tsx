@@ -11,6 +11,22 @@ function App() {
     endDate: "2024-11-21"
   };
 
+    // State for storing the fetched table data
+  const [shopData, setShopData] = useState([]);
+
+  // Fetch data from Lambda on component mount
+  useEffect(() => {
+    async function fetchShopData() {
+      const response = await fetch('https://gybmq07gv4.execute-api.ap-south-1.amazonaws.com/default/pmounica-mini-supermarket');
+      const data = await response.json();
+      setShopData(data);
+    }
+
+    fetchShopData();
+  }, []);
+
+  
+  
   // Sample data for the updates table
   const updates = [
     { updateDate: "2024-10-20", status: "In Progress", updatesDone: "List of Super Markets" },
@@ -98,6 +114,38 @@ function App() {
           <p>16. Swiggy, Instamart, etc. tie-up options</p>
           <p>17. Come up with options for in-house brands like "Karachi Bakery", etc.</p>
           </details>
+
+          {/* New Expandable Section for List of rental shops/shutters */}
+        <details>
+          <summary><h3>List of rental shops/shutters</h3></summary>
+          <table>
+            <thead>
+              <tr>
+                <th>Shop Name</th>
+                <th>Location</th>
+                <th>Size (sq ft)</th>
+                <th>Rent Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              {shopData.length > 0 ? (
+                shopData.map((shop, index) => (
+                  <tr key={index}>
+                    <td>{shop.shopName}</td>
+                    <td>{shop.location}</td>
+                    <td>{shop.size}</td>
+                    <td>{shop.rentPrice}</td>
+                  </tr>
+                ))
+              ) : (
+                <tr>
+                  <td colSpan="4">Loading data...</td>
+                </tr>
+              )}
+            </tbody>
+          </table>
+        </details>
+          
         </div>
 
         {/* Right box: Client Details */}
