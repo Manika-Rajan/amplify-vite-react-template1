@@ -135,9 +135,9 @@ function App() {
                   <tr key={index}>
                     <td>{shop.Address}</td>
                     <td>{shop.Pincode}</td>
-                    <td>{shop.Rent per sq ft}</td>
-                    <td>{shop.Owner's Name}</td>
-                    <td>{shop.Total Rent}</td>
+                    <td>{shop.Rent_per_sq_ft}</td>
+                    <td>{shop.Owners_Name}</td>
+                    <td>{shop.Total_Rent}</td>
                   </tr>
                 ))
               ) : (
