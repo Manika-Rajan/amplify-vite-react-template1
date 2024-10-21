@@ -2,6 +2,15 @@ import { useEffect, useState } from "react";
 import { useAuthenticator } from '@aws-amplify/ui-react';
 import './App.css'; // Ensure the CSS file is being used
 
+// Define an interface for shop data
+interface ShopData {
+  Address: string;
+  Pincode: string;
+  Rent_per_sq_ft: number;
+  Owners_Name: string;
+  Total_Rent: number;
+}
+
 function App() {
   const { signOut } = useAuthenticator();
 
@@ -12,15 +21,15 @@ function App() {
     endDate: "2024-11-21"
   };
 
-  // State for storing the fetched table data
-  const [shopData, setShopData] = useState([]);
+  // State for storing the fetched table data with correct type
+  const [shopData, setShopData] = useState<ShopData[]>([]);
 
   // Fetch data from Lambda on component mount
   useEffect(() => {
     async function fetchShopData() {
       try {
         const response = await fetch('https://gybmq07gv4.execute-api.ap-south-1.amazonaws.com/default/pmounica-mini-supermarket');
-        const data = await response.json();
+        const data: ShopData[] = await response.json();
         setShopData(data);
       } catch (error) {
         console.error('Error fetching shop data:', error);
@@ -67,7 +76,7 @@ function App() {
         width: '100%', 
         height: '100vh',  
         minHeight: '60vh',  
-        paddingTop: '80px',         // Create space for the fixed header
+        paddingTop: '80px',         
         alignItems: 'flex-start',   
         backgroundColor: 'transparent',  
         top: '1',
@@ -168,10 +177,10 @@ function App() {
         </div>
       </div>
 
-      {/* Updates Table - Float at the bottom */}
-      <div style={{ height: '20vh', padding: '20px', backgroundColor: '#f9f9f9', borderTop: '1px solid #ccc', flexShrink: 0 }}>
-        <h2 style={{ textAlign: 'center' }}>Updates</h2>
-        <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+      {/* Updates Section */}
+      <div style={{ flexGrow: 1, overflowY: 'auto', maxHeight: '30vh', marginTop: '20px' }}>
+        <h3 style={{ textAlign: 'center' }}>Updates</h3>
+        <table style={{ borderCollapse: 'collapse', width: '100%', margin: '0 auto', textAlign: 'left' }}>
           <thead>
             <tr>
               <th style={{ border: '1px solid #ddd', padding: '8px' }}>Update Date</th>
