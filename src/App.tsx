@@ -48,7 +48,7 @@ function App() {
         width: '100%', 
         height: '100vh',  
         minHeight: '60vh',  
-        paddingTop: '100px',         // Create space for the fixed header
+        paddingTop: '80px',         // Create space for the fixed header
         alignItems: 'flex-start',   
         backgroundColor: 'transparent',  
         top: '1',
