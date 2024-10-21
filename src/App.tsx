@@ -2,14 +2,14 @@ import { useEffect, useState } from "react";
 import { useAuthenticator } from '@aws-amplify/ui-react';
 import './App.css'; // Ensure the CSS file is being used
 
-// Define an interface for shop data
-interface ShopData {
+// Define a type for shop data
+type ShopData = {
   Address: string;
   Pincode: string;
-  Rent_per_sq_ft: number;
+  Rent_per_sq_ft: number; // Changed to number
   Owners_Name: string;
-  Total_Rent: number;
-}
+  Total_Rent: number; // Changed to number
+};
 
 function App() {
   const { signOut } = useAuthenticator();
@@ -21,7 +21,7 @@ function App() {
     endDate: "2024-11-21"
   };
 
-  // State for storing the fetched table data with correct type
+  // State for storing the fetched table data
   const [shopData, setShopData] = useState<ShopData[]>([]);
 
   // Fetch data from Lambda on component mount
@@ -30,7 +30,15 @@ function App() {
       try {
         const response = await fetch('https://gybmq07gv4.execute-api.ap-south-1.amazonaws.com/default/pmounica-mini-supermarket');
         const data: ShopData[] = await response.json();
-        setShopData(data);
+
+        // Parse Rent_per_sq_ft and Total_Rent to numbers
+        const parsedData = data.map(shop => ({
+          ...shop,
+          Rent_per_sq_ft: Number(shop.Rent_per_sq_ft),
+          Total_Rent: Number(shop.Total_Rent),
+        }));
+
+        setShopData(parsedData);
       } catch (error) {
         console.error('Error fetching shop data:', error);
       }
@@ -54,7 +62,7 @@ function App() {
     { updateDate: "Meeting 2", status: "", updatesDone: "" },
     { updateDate: "Meeting 3", status: "", updatesDone: "" },
   ];
-
+  
   return (
     <main style={{ height: '720px', display: 'flex', flexDirection: 'column', padding: '0', width: '80vw', margin: '0 auto', boxSizing: 'border-box' }}>
       {/* Fixed Header for Logo and Sign Out Button */}
@@ -76,7 +84,7 @@ function App() {
         width: '100%', 
         height: '100vh',  
         minHeight: '60vh',  
-        paddingTop: '80px',         
+        paddingTop: '80px',         // Create space for the fixed header
         alignItems: 'flex-start',   
         backgroundColor: 'transparent',  
         top: '1',
@@ -177,23 +185,23 @@ function App() {
         </div>
       </div>
 
-      {/* Updates Section */}
-      <div style={{ flexGrow: 1, overflowY: 'auto', maxHeight: '30vh', marginTop: '20px' }}>
-        <h3 style={{ textAlign: 'center' }}>Updates</h3>
-        <table style={{ borderCollapse: 'collapse', width: '100%', margin: '0 auto', textAlign: 'left' }}>
+      {/* Updates Table - Float at the bottom */}
+      <div style={{ height: '20vh', padding: '20px', backgroundColor: '#f9f9f9', borderTop: '1px solid #ccc', flexShrink: 0 }}>
+        <h2 style={{ textAlign: 'center' }}>Updates</h2>
+        <table style={{ width: '100%', borderCollapse: 'collapse' }}>
           <thead>
             <tr>
-              <th style={{ border: '1px solid #ddd', padding: '8px' }}>Update Date</th>
-              <th style={{ border: '1px solid #ddd', padding: '8px' }}>Status</th>
-              <th style={{ border: '1px solid #ddd', padding: '8px' }}>Updates Done</th>
+              <th>Date</th>
+              <th>Status</th>
+              <th>Updates Done</th>
             </tr>
           </thead>
           <tbody>
             {updates.map((update, index) => (
               <tr key={index}>
-                <td style={{ border: '1px solid #ddd', padding: '8px' }}>{update.updateDate}</td>
-                <td style={{ border: '1px solid #ddd', padding: '8px' }}>{update.status}</td>
-                <td style={{ border: '1px solid #ddd', padding: '8px' }}>{update.updatesDone}</td>
+                <td>{update.updateDate}</td>
+                <td>{update.status}</td>
+                <td>{update.updatesDone}</td>
               </tr>
             ))}
           </tbody>
