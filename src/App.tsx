@@ -6,9 +6,9 @@ import './App.css'; // Ensure the CSS file is being used
 type ShopData = {
   Address: string;
   Pincode: string;
-  Rent_per_sq_ft: number; // Changed to number
+  Rent_per_sq_ft: string; // Changed to number
   Owners_Name: string;
-  Total_Rent: number; // Changed to number
+  Total_Rent: string; // Changed to number
 };
 
 function App() {
@@ -34,8 +34,8 @@ function App() {
         // Parse Rent_per_sq_ft and Total_Rent to numbers
         const parsedData = data.map(shop => ({
           ...shop,
-          Rent_per_sq_ft: Number(shop.Rent_per_sq_ft),
-          Total_Rent: Number(shop.Total_Rent),
+          Rent_per_sq_ft: string(shop.Rent_per_sq_ft),
+          Total_Rent: string(shop.Total_Rent),
         }));
 
         setShopData(parsedData);
