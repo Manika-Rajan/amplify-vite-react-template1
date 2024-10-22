@@ -28,7 +28,7 @@ function App() {
   useEffect(() => {
     async function fetchShopData() {
       try {
-        const response = await fetch('https://gybmq07gv4.execute-api.ap-south-1.amazonaws.com/default/pmounica-mini-supermarket');
+        const response = await fetch('https://gybmq07gv4.execute-api.ap-south-1.amazonaws.com/v1/pmounica-mini-supermarket');
         const data: ShopData[] = await response.json();
 
         // Parse Rent_per_sq_ft and Total_Rent to numbers
