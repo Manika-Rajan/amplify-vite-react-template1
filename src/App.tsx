@@ -31,6 +31,9 @@ function App() {
         const response = await fetch('https://gybmq07gv4.execute-api.ap-south-1.amazonaws.com/v1/pmounica-mini-supermarket');
         const data: ShopData[] = await response.json();
 
+        // Log the types and values of the fetched data
+        console.log(typeof data[0]?.Rent_per_sq_ft, data[0]?.Rent_per_sq_ft);
+        console.log(typeof data[0]?.Total_Rent, data[0]?.Total_Rent);
 
         setShopData(data);
       } catch (error) {
