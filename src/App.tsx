@@ -6,9 +6,9 @@ import './App.css'; // Ensure the CSS file is being used
 type ShopData = {
   Address: string;
   Pincode: string;
-  Rent_per_sq_ft: string; // Changed to number
+  Rent_per_sq_ft: string; // keep as string
   Owners_Name: string;
-  Total_Rent: string; // Changed to number
+  Total_Rent: string; // keep as string
 };
 
 function App() {
