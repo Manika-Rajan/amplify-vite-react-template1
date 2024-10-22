@@ -32,7 +32,7 @@ function App() {
         const data: ShopData[] = await response.json();
 
 
-        setShopData(parsedData);
+        setShopData(data);
       } catch (error) {
         console.error('Error fetching shop data:', error);
       }
