@@ -59,7 +59,7 @@ function App() {
     { updateDate: "Meeting 2", status: "", updatesDone: "" },
     { updateDate: "Meeting 3", status: "", updatesDone: "" },
   ];
-  
+
   return (
     <main style={{ height: '720px', display: 'flex', flexDirection: 'column', padding: '0', width: '80vw', margin: '0 auto', boxSizing: 'border-box' }}>
       {/* Fixed Header for Logo and Sign Out Button */}
@@ -182,9 +182,14 @@ function App() {
         </div>
       </div>
 
-      {/* Updates Table - Float at the bottom */}
-      <div style={{ height: '20vh', padding: '20px', backgroundColor: '#f9f9f9', borderTop: '1px solid #ccc', flexShrink: 0 }}>
-        <h2 style={{ textAlign: 'center' }}>Updates</h2>
+      {/* Updates Section */}
+      <div style={{ 
+        marginTop: '10px', 
+        padding: '10px', 
+        backgroundColor: '#f9f9f9', 
+        borderTop: '1px solid #ccc' 
+      }}>
+        <h2 style={{ textAlign: 'center'}}>Updates</h2>
         <table style={{ width: '100%', borderCollapse: 'collapse' }}>
           <thead>
             <tr>
