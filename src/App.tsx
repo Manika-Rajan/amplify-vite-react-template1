@@ -34,8 +34,6 @@ function App() {
         // Parse Rent_per_sq_ft and Total_Rent to numbers
         const parsedData = data.map(shop => ({
           ...shop,
-          Rent_per_sq_ft: string(shop.Rent_per_sq_ft),
-          Total_Rent: string(shop.Total_Rent),
         }));
 
         setShopData(parsedData);
