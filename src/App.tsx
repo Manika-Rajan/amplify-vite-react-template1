@@ -136,7 +136,9 @@ function App() {
           <details>
             <summary>
               <span style={{ display: 'inline' }}>
-                <h3 style={{ display: 'inline', margin: 0 }}><h3>List of rental shops/shutters</h3></summary>
+                <h3 style={{ display: 'inline', margin: 0 }}><h3>List of rental shops/shutters</h3>
+              </span>
+              </summary>
             <table>
               <thead>
                 <tr>
