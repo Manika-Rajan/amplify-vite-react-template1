@@ -93,7 +93,7 @@ function App() {
           padding: '10px 20px', 
           backgroundColor: '#f0f0f0', 
           overflowY: 'auto',          
-          maxHeight: 'calc(80vh - 100px)', 
+          maxHeight: 'calc(90vh - 100px)', 
           boxSizing: 'border-box',
           textAlign: 'left',           
           marginRight: '10px',         
