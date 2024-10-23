@@ -158,7 +158,7 @@ function App() {
                   ))
                 ) : (
                   <tr>
-                    <td colSpan="5">Loading data...</td>
+                   {/* <td colSpan="5">Loading data...</td> */}
                   </tr>
                 )}
               </tbody>
