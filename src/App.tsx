@@ -189,7 +189,7 @@ function App() {
 
       {/* Updates Section */}
       <div style={{ 
-        marginTop: '50px', 
+        marginTop: '150px', 
         padding: '10px', 
         backgroundColor: '#f9f9f9', 
         borderTop: '1px solid #ccc' 
