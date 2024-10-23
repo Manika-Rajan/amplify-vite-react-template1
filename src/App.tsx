@@ -134,7 +134,9 @@ function App() {
 
           {/* New Expandable Section for List of rental shops/shutters */}
           <details>
-            <summary><h3>List of rental shops/shutters</h3></summary>
+            <summary>
+              <span style={{ display: 'inline' }}>
+                <h3 style={{ display: 'inline', margin: 0 }}><h3>List of rental shops/shutters</h3></summary>
             <table>
               <thead>
                 <tr>
