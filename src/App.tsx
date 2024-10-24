@@ -6,7 +6,7 @@ import './App.css'; // Ensure the CSS file is being used
 type ShopData = {
   Location: string;
   Pincode: string;
-  Area (in sq.ft): string; // keep as string
+  Area(sqft): string; // keep as string
   Owners_Name: string;
   Total_Rent: string; // keep as string
 };
@@ -158,7 +158,7 @@ function App() {
                     <tr key={index}>
                       <td>{shop.Location}</td>
                       <td>{shop.Pincode}</td>
-                      <td>{shop.Area (in sq.ft)}</td>
+                      <td>{shop.Area(sqft)}</td>
                       <td>{shop.Owners_Name}</td>
                       <td>{shop.Total_Rent}</td>
                     </tr>
@@ -195,7 +195,7 @@ function App() {
                     <tr key={index}>
                       <td>{shop.Location}</td>
                       <td>{shop.Pincode}</td>
-                      <td>{shop.Area (in sq.ft)}</td>
+                      <td>{shop.Area(sqft)}</td>
                       <td>{shop.Owners_Name}</td>
                       <td>{shop.Total_Rent}</td>
                     </tr>
