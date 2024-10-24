@@ -142,6 +142,34 @@ function App() {
                 <h3 style={{ display: 'inline', margin: 0 }}>List of supermarkets in and around Chandanagar</h3>
               </span>
             </summary>
+            <table>
+              <thead>
+                <tr>
+                  <th>Address</th>
+                  <th>Pincode</th>
+                  <th>Rent per sq ft</th>
+                  <th>Owner's Name</th>
+                  <th>Total Rent</th>
+                </tr>
+              </thead>
+              <tbody>
+                {shopData.length > 0 ? (
+                  shopData.map((shop, index) => (
+                    <tr key={index}>
+                      <td>{shop.Address}</td>
+                      <td>{shop.Pincode}</td>
+                      <td>{shop.Rent_per_sq_ft}</td>
+                      <td>{shop.Owners_Name}</td>
+                      <td>{shop.Total_Rent}</td>
+                    </tr>
+                  ))
+                ) : (
+                  <tr>
+                    <td colSpan={5}>Loading data...</td>
+                  </tr>
+                )}
+              </tbody>
+            </table>            
           </details>
           
           {/* New Expandable Section for List of rental shops/shutters */}
