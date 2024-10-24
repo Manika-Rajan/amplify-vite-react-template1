@@ -92,9 +92,10 @@ function App() {
           flexBasis: '100%',          
           padding: '10px 20px', 
           backgroundColor: '#f0f0f0', 
-          //overflowY: 'auto',          
-          maxHeight: 'none',
-          //maxHeight: 'calc(80vh - 80px)',
+          overflowY: 'auto',          
+          //maxHeight: 'none',
+          minHeight: '100vh', // or some other value
+          maxHeight: 'calc(80vh - 80px)',
           boxSizing: 'border-box',
           textAlign: 'left',           
           marginRight: '10px',         
