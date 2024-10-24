@@ -182,7 +182,7 @@ function App() {
             <table>
               <thead>
                 <tr>
-                  <th>Address</th>
+                  <th>Location</th>
                   <th>Pincode</th>
                   <th>Rent per sq ft</th>
                   <th>Owner's Name</th>
