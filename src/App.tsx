@@ -4,7 +4,7 @@ import './App.css'; // Ensure the CSS file is being used
 
 // Define a type for shop data
 type ShopData = {
-  Address: string;
+  Location: string;
   Pincode: string;
   Rent_per_sq_ft: string; // keep as string
   Owners_Name: string;
@@ -145,7 +145,7 @@ function App() {
             <table>
               <thead>
                 <tr>
-                  <th>Address</th>
+                  <th>Location</th>
                   <th>Pincode</th>
                   <th>Rent per sq ft</th>
                   <th>Owner's Name</th>
@@ -156,7 +156,7 @@ function App() {
                 {shopData.length > 0 ? (
                   shopData.map((shop, index) => (
                     <tr key={index}>
-                      <td>{shop.Address}</td>
+                      <td>{shop.Location}</td>
                       <td>{shop.Pincode}</td>
                       <td>{shop.Rent_per_sq_ft}</td>
                       <td>{shop.Owners_Name}</td>
@@ -193,7 +193,7 @@ function App() {
                 {shopData.length > 0 ? (
                   shopData.map((shop, index) => (
                     <tr key={index}>
-                      <td>{shop.Address}</td>
+                      <td>{shop.Location}</td>
                       <td>{shop.Pincode}</td>
                       <td>{shop.Rent_per_sq_ft}</td>
                       <td>{shop.Owners_Name}</td>
