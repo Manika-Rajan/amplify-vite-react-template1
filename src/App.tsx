@@ -89,7 +89,7 @@ function App() {
       }}>
         {/* Left box: Paragraphs */}
         <div style={{ 
-          flexBasis: '100%',          
+          flexBasis: '90%',          
           padding: '10px 20px', 
           backgroundColor: '#f0f0f0', 
           overflowY: 'auto',          
