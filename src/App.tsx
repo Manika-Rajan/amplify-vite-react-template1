@@ -134,7 +134,16 @@ function App() {
             <p>16. Swiggy, Instamart, etc. tie-up options</p>
             <p>17. Come up with options for in-house brands like "Karachi Bakery", etc.</p>
           </details>
-
+          
+          {/* New Expandable Section for List of supermarkets in and around Chandanagar */}
+          <details>
+            <summary>
+              <span style={{ display: 'inline' }}>
+                <h3 style={{ display: 'inline', margin: 0 }}>List of supermarkets in and around Chandanagar</h3>
+              </span>
+            </summary>
+          </details>
+          
           {/* New Expandable Section for List of rental shops/shutters */}
           <details>
             <summary>
