@@ -6,7 +6,7 @@ import './App.css'; // Ensure the CSS file is being used
 type ShopData = {
   Location: string;
   Pincode: string;
-  Area: string; // keep as string
+  Area1: string; // keep as string
   Owners_Name: string;
   Total_Rent: string; // keep as string
 };
@@ -32,7 +32,7 @@ function App() {
         const data: ShopData[] = await response.json();
 
         // Log the types and values of the fetched data
-        console.log(typeof data[0]?.Area, data[0]?.Area);
+        console.log(typeof data[0]?.Area1, data[0]?.Area1);
         console.log(typeof data[0]?.Total_Rent, data[0]?.Total_Rent);
 
         setShopData(data);
@@ -158,7 +158,7 @@ function App() {
                     <tr key={index}>
                       <td>{shop.Location}</td>
                       <td>{shop.Pincode}</td>
-                      <td>{shop.Area}</td>
+                      <td>{shop.Area1}</td>
                       <td>{shop.Owners_Name}</td>
                       <td>{shop.Total_Rent}</td>
                     </tr>
@@ -195,7 +195,7 @@ function App() {
                     <tr key={index}>
                       <td>{shop.Location}</td>
                       <td>{shop.Pincode}</td>
-                      <td>{shop.Area}</td>
+                      <td>{shop.Area1}</td>
                       <td>{shop.Owners_Name}</td>
                       <td>{shop.Total_Rent}</td>
                     </tr>
