@@ -199,7 +199,7 @@ function App() {
                   <th>Location</th>
                   <th>Pincode</th>
                   <th>Area (in sqft)</th>
-                  <th>Owner's Name</th>
+                  <th>Deposit</th>
                   <th>Total Rent</th>
                 </tr>
               </thead>
