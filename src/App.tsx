@@ -11,6 +11,12 @@ type ShopData = {
   Total_Rent: string; // keep as string
 };
 
+type SupermarketData = {
+  SMname: string;
+  Adress: string;
+  Pincode1: string;
+};
+
 function App() {
   const { signOut } = useAuthenticator();
 
@@ -23,6 +29,7 @@ function App() {
 
   // State for storing the fetched table data
   const [shopData, setShopData] = useState<ShopData[]>([]);
+  const [supermarketData, setSupermarketData] = useState<SupermarketData[]>([]);
 
   // Fetch data from Lambda on component mount
   useEffect(() => {
@@ -40,8 +47,19 @@ function App() {
         console.error('Error fetching shop data:', error);
       }
     }
+  
+    async function fetchSupermarketData() {
+      try {
+        const response = await fetch('https://x756c7ckq9.execute-api.ap-south-1.amazonaws.com/default/pmounica-mini-supermarket-1');
+        const data: SupermarketData[] = await response.json();
+        setSupermarketData(data);
+      } catch (error) {
+        console.error('Error fetching supermarket data:', error);
+      }
+    }
 
     fetchShopData();
+    fetchSupermarketData();
   }, []);
 
   // Sample data for the updates table
@@ -145,27 +163,23 @@ function App() {
             <table>
               <thead>
                 <tr>
-                  <th>Location</th>
-                  <th>Pincode</th>
-                  <th>Area (in sq.ft)</th>
-                  <th>Owner's Name</th>
-                  <th>Total Rent</th>
+                    <th>Supermarket Name</th>
+                    <th>Address</th>
+                    <th>Pincode</th>
                 </tr>
               </thead>
               <tbody>
-                {shopData.length > 0 ? (
-                  shopData.map((shop, index) => (
-                    <tr key={index}>
-                      <td>{shop.Location}</td>
-                      <td>{shop.Pincode}</td>
-                      <td>{shop.Area1}</td>
-                      <td>{shop.Owners_Name}</td>
-                      <td>{shop.Total_Rent}</td>
-                    </tr>
+                    {supermarketData.length > 0 ? (
+                      supermarketData.map((supermarket, index) => (
+                        <tr key={index}>
+                          <td>{supermarket.SMname}</td>
+                          <td>{supermarket.Adress}</td>
+                          <td>{supermarket.Pincode1}</td>
+                        </tr>
                   ))
                 ) : (
                   <tr>
-                    <td colSpan={5}>Loading data...</td>
+                    <td colSpan={3}>Loading data...</td>
                   </tr>
                 )}
               </tbody>
