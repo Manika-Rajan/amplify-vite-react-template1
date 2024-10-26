@@ -160,7 +160,7 @@ function App() {
                 <h3 style={{ display: 'inline', margin: 0 }}>List of supermarkets in and around Chandanagar</h3>
               </span>
             </summary>
-            <table>
+            <table style={{ width: '100%', borderCollapse: 'collapse', border: '1px solid #ccc' }}>
               <thead>
                 <tr>
                     <th>Supermarket Name</th>
@@ -193,7 +193,7 @@ function App() {
                 <h3 style={{ display: 'inline', margin: 0 }}>List of rental shops/shutters</h3>
               </span>
               </summary>
-            <table>
+            <table style={{ width: '100%', borderCollapse: 'collapse', border: '1px solid #ccc' }}>
               <thead>
                 <tr>
                   <th>Location</th>
