@@ -163,23 +163,23 @@ function App() {
             <table style={{ width: '100%', borderCollapse: 'collapse', border: '1px solid #ccc' }}>
               <thead>
                 <tr>
-                    <th>Supermarket Name</th>
-                    <th>Address</th>
-                    <th>Pincode</th>
+                    <th style={{ border: '1px solid #ccc' }}>Supermarket Name</th>
+                    <th style={{ border: '1px solid #ccc' }}>Address</th>
+                    <th style={{ border: '1px solid #ccc' }}>Pincode</th>
                 </tr>
               </thead>
               <tbody>
                     {supermarketData.length > 0 ? (
                       supermarketData.map((supermarket, index) => (
                         <tr key={index}>
-                          <td>{supermarket.SMname}</td>
-                          <td>{supermarket.Adress}</td>
-                          <td>{supermarket.Pincode1}</td>
+                          <td style={{ border: '1px solid #ccc' }}>{supermarket.SMname}</td>
+                          <td style={{ border: '1px solid #ccc' }}>{supermarket.Adress}</td>
+                          <td style={{ border: '1px solid #ccc' }}>{supermarket.Pincode1}</td>
                         </tr>
                   ))
                 ) : (
                   <tr>
-                    <td colSpan={3}>Loading data...</td>
+                    <td colSpan={3} style={{ border: '1px solid #ccc' }}>Loading data...</td>
                   </tr>
                 )}
               </tbody>
@@ -196,27 +196,27 @@ function App() {
             <table style={{ width: '100%', borderCollapse: 'collapse', border: '1px solid #ccc' }}>
               <thead>
                 <tr>
-                  <th>Location</th>
-                  <th>Pincode</th>
-                  <th>Area (in sqft)</th>
-                  <th>Deposit</th>
-                  <th>Total Rent</th>
+                  <th style={{ border: '1px solid #ccc' }}>Location</th>
+                  <th style={{ border: '1px solid #ccc' }}>Pincode</th>
+                  <th style={{ border: '1px solid #ccc' }}>Area (in sqft)</th>
+                  <th style={{ border: '1px solid #ccc' }}>Deposit</th>
+                  <th style={{ border: '1px solid #ccc' }}>Total Rent</th>
                 </tr>
               </thead>
               <tbody>
                 {shopData.length > 0 ? (
                   shopData.map((shop, index) => (
                     <tr key={index}>
-                      <td>{shop.Location}</td>
-                      <td>{shop.Pincode}</td>
-                      <td>{shop.Area1}</td>
-                      <td>{shop.Owners_Name}</td>
-                      <td>{shop.Total_Rent}</td>
+                      <td style={{ border: '1px solid #ccc' }}>{shop.Location}</td>
+                      <td style={{ border: '1px solid #ccc' }}>{shop.Pincode}</td>
+                      <td style={{ border: '1px solid #ccc' }}>{shop.Area1}</td>
+                      <td style={{ border: '1px solid #ccc' }}>{shop.Owners_Name}</td>
+                      <td style={{ border: '1px solid #ccc' }}>{shop.Total_Rent}</td>
                     </tr>
                   ))
                 ) : (
                   <tr>
-                    <td colSpan={5}>Loading data...</td>
+                    <td colSpan={5} style={{ border: '1px solid #ccc' }}>Loading data...</td>
                   </tr>
                 )}
               </tbody>
