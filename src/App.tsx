@@ -224,6 +224,20 @@ function App() {
           </details>
         </div>
 
+        <details>
+            <summary>
+              <span style={{ display: 'inline' }}>
+                <h3 style={{ display: 'inline', margin: 0 }}>List of Licenses and Registrations requred (work in Progress)</h3>
+              </span>
+            </summary>
+            <p>1. Shop licence from municipality</p>
+            <p>2. Labour licence for staff</p>
+            <p>3. Weighing machine licence</p>
+            <p>4. GST registration if we are expecting more than 40lakhs Turnover per year</p>
+            
+          </details>
+
+
         {/* Right box: Client Details */}
         <div style={{ 
           flexBasis: '20%',          
