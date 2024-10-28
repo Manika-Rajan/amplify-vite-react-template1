@@ -222,9 +222,8 @@ function App() {
               </tbody>
             </table>
           </details>
-        </div>
-
-        <details>
+          
+          <details>
             <summary>
               <span style={{ display: 'inline' }}>
                 <h3 style={{ display: 'inline', margin: 0 }}>List of Licenses and Registrations requred (work in Progress)</h3>
@@ -236,6 +235,8 @@ function App() {
             <p>4. GST registration if we are expecting more than 40lakhs Turnover per year</p>
             
           </details>
+        </div>
+
 
 
         {/* Right box: Client Details */}
