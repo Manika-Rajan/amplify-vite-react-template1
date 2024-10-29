@@ -96,7 +96,7 @@ function App() {
         marginTop: '40px',
         display: 'flex', 
         flexGrow: 1, 
-        overflow: 'hidden', 
+        overflow: 'visible', 
         width: '100%', 
         height: '150vh',  
         minHeight: '60vh',  
