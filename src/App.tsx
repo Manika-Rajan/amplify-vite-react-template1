@@ -233,6 +233,7 @@ function App() {
             <p>&emsp;&emsp;2. Labour licence for staff</p>
             <p>&emsp;&emsp;3. Weighing machine licence</p>
             <p>&emsp;&emsp;4. GST registration if we are expecting more than 40lakhs Turnover per year</p>
+            <p>&emsp;&emsp;5. FSSAI certificate</p>
             
           </details>
         </div>
