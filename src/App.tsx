@@ -17,6 +17,12 @@ type SupermarketData = {
   Pincode1: string;
 };
 
+type SupermarketProductData = {
+  SMname: string;
+  Adress: string;
+  Pincode1: string;
+};
+
 function App() {
   const { signOut } = useAuthenticator();
 
