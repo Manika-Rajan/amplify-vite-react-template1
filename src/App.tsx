@@ -84,7 +84,7 @@ function App() {
   const updates = [
     { updateDate: "2024-10-20", status: "Completed", updatesDone: "List of Super Markets in Chandanagar" },
     { updateDate: "2024-10-24", status: "Completed", updatesDone: "List of Shops/shutters for rent" },
-    { updateDate: "2024-10-28", status: "In Progress", updatesDone: "List of Products generally held in a Super Market" },
+    { updateDate: "2024-10-28", status: "Completed", updatesDone: "List of Products generally held in a Super Market" },
     { updateDate: "2024-11-01", status: "In Progress", updatesDone: "Products selling the most in Super Markets, List of Licenses and Registrations required" },
     { updateDate: "2024-11-05", status: "", updatesDone: "" },
     { updateDate: "2024-11-09", status: "", updatesDone: "" },
