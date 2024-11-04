@@ -58,8 +58,19 @@ function App() {
       }
     }
 
+    async function fetchSupermarketProductData() {
+      try {
+        const response = await fetch('https://g4ig7ntqv1.execute-api.ap-south-1.amazonaws.com/default/pmounica_mini_supermarket_2');
+        const data: SupermarketProductData[] = await response.json();
+        setSupermarketProductData(data);
+      } catch (error) {
+        console.error('Error fetching supermarket Product data:', error);
+      }
+    }
+    
     fetchShopData();
     fetchSupermarketData();
+    fetchSupermarketProductData();
   }, []);
 
   // Sample data for the updates table
@@ -233,9 +244,9 @@ function App() {
             <table style={{ width: '100%', borderCollapse: 'collapse', border: '1px solid #ccc' }}>
               <thead>
                 <tr>
-                    <th style={{ border: '1px solid #ccc' }}>Supermarket Name</th>
-                    <th style={{ border: '1px solid #ccc' }}>Address</th>
-                    <th style={{ border: '1px solid #ccc' }}>Pincode</th>
+                    <th style={{ border: '1px solid #ccc' }}>Product Category</th>
+                    <th style={{ border: '1px solid #ccc' }}>Product Subcategory</th>
+                    <th style={{ border: '1px solid #ccc' }}>Products</th>
                 </tr>
               </thead>
               <tbody>
