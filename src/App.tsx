@@ -86,7 +86,7 @@ function App() {
     { updateDate: "2024-10-24", status: "Completed", updatesDone: "List of Shops/shutters for rent" },
     { updateDate: "2024-10-28", status: "Completed", updatesDone: "List of Products generally held in a Super Market" },
     { updateDate: "2024-11-01", status: "In Progress", updatesDone: "Products selling the most in Super Markets, List of Licenses and Registrations required" },
-    { updateDate: "2024-11-05", status: "In Progress", updatesDone: "Swiggy, Instamart, etc. tie-up options, Options for In-house brands like "Karachi Bakery", etc." },
+    { updateDate: "2024-11-05", status: "In Progress", updatesDone: "Swiggy, Instamart, etc. tie-up options, Options for In-house brands like 'Karachi Bakery', etc." },
     { updateDate: "2024-11-09", status: "", updatesDone: "" },
     { updateDate: "2024-11-13", status: "", updatesDone: "" },
     { updateDate: "2024-11-17", status: "", updatesDone: "" },
