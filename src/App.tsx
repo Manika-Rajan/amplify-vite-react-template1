@@ -222,6 +222,40 @@ function App() {
               </tbody>
             </table>
           </details>
+
+          {/* New Expandable Section for List of Products generally held in a Super Market */}
+          <details>
+            <summary>
+              <span style={{ display: 'inline' }}>
+                <h3 style={{ display: 'inline', margin: 0 }}>List of Products generally held in a Super Market</h3>
+              </span>
+            </summary>
+            <table style={{ width: '100%', borderCollapse: 'collapse', border: '1px solid #ccc' }}>
+              <thead>
+                <tr>
+                    <th style={{ border: '1px solid #ccc' }}>Supermarket Name</th>
+                    <th style={{ border: '1px solid #ccc' }}>Address</th>
+                    <th style={{ border: '1px solid #ccc' }}>Pincode</th>
+                </tr>
+              </thead>
+              <tbody>
+                    {supermarketData.length > 0 ? (
+                      supermarketData.map((supermarket, index) => (
+                        <tr key={index}>
+                          <td style={{ border: '1px solid #ccc' }}>{supermarket.SMname}</td>
+                          <td style={{ border: '1px solid #ccc' }}>{supermarket.Adress}</td>
+                          <td style={{ border: '1px solid #ccc' }}>{supermarket.Pincode1}</td>
+                        </tr>
+                  ))
+                ) : (
+                  <tr>
+                    <td colSpan={3} style={{ border: '1px solid #ccc' }}>Loading data...</td>
+                  </tr>
+                )}
+              </tbody>
+            </table>            
+          </details>
+
           
           <details>
             <summary>
