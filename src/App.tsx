@@ -30,6 +30,7 @@ function App() {
   // State for storing the fetched table data
   const [shopData, setShopData] = useState<ShopData[]>([]);
   const [supermarketData, setSupermarketData] = useState<SupermarketData[]>([]);
+  const [supermarketData, setSupermarketData] = useState<SupermarketProductData[]>([]);
 
   // Fetch data from Lambda on component mount
   useEffect(() => {
