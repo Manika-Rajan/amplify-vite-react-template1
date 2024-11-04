@@ -251,8 +251,8 @@ function App() {
                 </tr>
               </thead>
               <tbody>
-                    {supermarketData.length > 0 ? (
-                      supermarketData.map((supermarket, index) => (
+                    {supermarketProductData.length > 0 ? (
+                      supermarketProductData.map((supermarket, index) => (
                         <tr key={index}>
                           <td style={{ border: '1px solid #ccc' }}>{supermarket.SMname}</td>
                           <td style={{ border: '1px solid #ccc' }}>{supermarket.Adress}</td>
