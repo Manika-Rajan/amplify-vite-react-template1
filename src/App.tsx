@@ -295,16 +295,16 @@ function App() {
                 <h3 style={{ display: 'inline', margin: 0 }}>Products Sourcing Leads: list of dealers, suppliers, stockists</h3> (work in Progress)
               </span>
             </summary>
-            <p>&emsp;&emsp;Would be collecting the Local Address of the below company distributors</p>
-            <p>&emsp;&emsp;1. HLL</p>
-            <p>&emsp;&emsp;2. ITC</p>
-            <p>&emsp;&emsp;3. Godrej</p>
-            <p>&emsp;&emsp;4. WIPRO</p>
-            <p>&emsp;&emsp;5. DABUR</p>
-            <p>&emsp;&emsp;6. P&G</p>
-            <p>&emsp;&emsp;7. MARICO</p>
-            <p>&emsp;&emsp;8. BRITANNIA</p>
-            <p>&emsp;&emsp;9. Local traders for Dals, pulses & Oils</p>
+            <p>&emsp;&emsp;List of Company distributors</p>
+            <p>&emsp;&emsp;&emsp;1. HLL</p>
+            <p>&emsp;&emsp;&emsp;2. ITC</p>
+            <p>&emsp;&emsp;&emsp;3. Godrej</p>
+            <p>&emsp;&emsp;&emsp;4. WIPRO</p>
+            <p>&emsp;&emsp;&emsp;5. DABUR</p>
+            <p>&emsp;&emsp;&emsp;6. P&G</p>
+            <p>&emsp;&emsp;&emsp;7. MARICO</p>
+            <p>&emsp;&emsp;&emsp;8. BRITANNIA</p>
+            <p>&emsp;&emsp;&emsp;9. Local traders for Dals, pulses & Oils</p>
             
           </details>
         </div>
