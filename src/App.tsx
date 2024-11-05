@@ -292,10 +292,10 @@ function App() {
           <details>
             <summary>
               <span style={{ display: 'inline' }}>
-                <h3 style={{ display: 'inline', margin: 0 }}>Where to source products from: list of dealers, suppliers, stockists</h3> (work in Progress)
+                <h3 style={{ display: 'inline', margin: 0 }}>Products Sourcing Leads: list of dealers, suppliers, stockists</h3> (work in Progress)
               </span>
             </summary>
-            <p>Would be collecting the Local Address of the below company distributors</p>
+            <p>&emsp;&emsp;Would be collecting the Local Address of the below company distributors</p>
             <p>&emsp;&emsp;1. HLL</p>
             <p>&emsp;&emsp;2. ITC</p>
             <p>&emsp;&emsp;3. Godrej</p>
