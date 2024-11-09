@@ -23,6 +23,12 @@ type SupermarketProductData = {
   Pincode1: string;
 };
 
+type SupermarketMostsellingProductData = {
+  SMname: string;
+  Adress: string;
+  Pincode1: string;
+};
+
 function App() {
   const { signOut } = useAuthenticator();
 
@@ -37,6 +43,7 @@ function App() {
   const [shopData, setShopData] = useState<ShopData[]>([]);
   const [supermarketData, setSupermarketData] = useState<SupermarketData[]>([]);
   const [supermarketProductData, setSupermarketProductData] = useState<SupermarketProductData[]>([]);
+  const [supermarketMostsellingProductData, setSupermarketMostsellingProductData] = useState<SupermarketMostsellingProductData[]>([]);
 
   // Fetch data from Lambda on component mount
   useEffect(() => {
@@ -74,10 +81,21 @@ function App() {
         console.error('Error fetching supermarket Product data:', error);
       }
     }
+
+    async function fetchSupermarketMostsellingProductData() {
+      try {
+        const response = await fetch('https://m39kaz3j2h.execute-api.ap-south-1.amazonaws.com/default/pmounica_mini_supermarket_3');
+        const data: SupermarketMostsellingProductData[] = await response.json();
+        setSupermarketMostsellingProductData(data);
+      } catch (error) {
+        console.error('Error fetching supermarket Product data:', error);
+      }
+    }
     
     fetchShopData();
     fetchSupermarketData();
     fetchSupermarketProductData();
+    fetchSupermarketMostsellingProductData();
   }, []);
 
   // Sample data for the updates table
@@ -274,7 +292,41 @@ function App() {
             </table>            
           </details>
 
-          
+          {/* New Expandable Section for Products selling the most in Super Markets */}
+          <details>
+            <summary>
+              <span style={{ display: 'inline' }}>
+                <h3 style={{ display: 'inline', margin: 0 }}>Products selling the most in Super Markets</h3>
+              </span>
+            </summary>
+            <table style={{ width: '100%', borderCollapse: 'collapse', border: '1px solid #ccc' }}>
+              <thead>
+                <tr>
+                    <th style={{ border: '1px solid #ccc' }}>Product Category</th>
+                    <th style={{ border: '1px solid #ccc' }}>Product Subcategory</th>
+                    <th style={{ border: '1px solid #ccc' }}>Products</th>
+                </tr>
+              </thead>
+              <tbody>
+                    {supermarketMostsellingProductData.length > 0 ? (
+                      supermarketMostsellingProductData.map((supermarket, index) => (
+                        <tr key={index}>
+                          <td style={{ border: '1px solid #ccc' }}>{supermarket.SMname}</td>
+                          <td style={{ border: '1px solid #ccc' }}>{supermarket.Adress}</td>
+                          <td style={{ border: '1px solid #ccc' }}>{supermarket.Pincode1}</td>
+                        </tr>
+                  ))
+                ) : (
+                  <tr>
+                    <td colSpan={3} style={{ border: '1px solid #ccc' }}>Loading data...</td>
+                  </tr>
+                )}
+              </tbody>
+            </table>            
+          </details>
+
+{/* \\============================================================================================================================           */}
+{/* \\============================================================================================================================           */}
           <details>
             <summary>
               <span style={{ display: 'inline' }}>
