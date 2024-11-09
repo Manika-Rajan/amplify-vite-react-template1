@@ -24,9 +24,7 @@ type SupermarketProductData = {
 };
 
 type SupermarketMostsellingProductData = {
-  SMname: string;
-  Adress: string;
-  Pincode1: string;
+  PCname: string;
 };
 
 function App() {
@@ -303,17 +301,13 @@ function App() {
               <thead>
                 <tr>
                     <th style={{ border: '1px solid #ccc' }}>Product Category</th>
-                    <th style={{ border: '1px solid #ccc' }}>Product Subcategory</th>
-                    <th style={{ border: '1px solid #ccc' }}>Products</th>
                 </tr>
               </thead>
               <tbody>
                     {supermarketMostsellingProductData.length > 0 ? (
                       supermarketMostsellingProductData.map((supermarket, index) => (
                         <tr key={index}>
-                          <td style={{ border: '1px solid #ccc' }}>{supermarket.SMname}</td>
-                          <td style={{ border: '1px solid #ccc' }}>{supermarket.Adress}</td>
-                          <td style={{ border: '1px solid #ccc' }}>{supermarket.Pincode1}</td>
+                          <td style={{ border: '1px solid #ccc' }}>{supermarket.PCname}</td>
                         </tr>
                   ))
                 ) : (
