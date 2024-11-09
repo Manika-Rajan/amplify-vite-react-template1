@@ -33,6 +33,8 @@ function App() {
   const clientDetails = {
     name: "P Mounica",
     age: 29,
+    Education: "Masters in Organic Chemistry",
+    PreviousWE: "3+ years in hetero drugs",
     startDate: "2024-10-17",
     endDate: "2024-11-21"
   };
@@ -365,9 +367,11 @@ function App() {
           boxSizing: 'border-box',       
           textAlign: 'left',           
         }}>
-          <h2 style={{ textAlign: 'center'}}>Client Details</h2>
+          <h2 style={{ textAlign: 'center'}}>Client Profile</h2>
           <p><strong>Name:</strong> {clientDetails.name}</p>
           <p><strong>Age:</strong> {clientDetails.age}</p>
+          <p><strong>Education:</strong> {clientDetails.Education}</p>
+          <p><strong>Previous Work Experience:</strong> {clientDetails.PreviousWE}</p>
           <p><strong>Start Date:</strong> {clientDetails.startDate}</p>
           <p><strong>End Date:</strong> {clientDetails.endDate}</p>
         </div>
