@@ -322,36 +322,6 @@ function App() {
           </details>
 
 {/* \\============================================================================================================================           */}
-
-          {/* New Expandable Section for options for in-house brands like "Karachi Bakery", etc. */}
-          <details>
-            <summary>
-              <span style={{ display: 'inline' }}>
-                <h3 style={{ display: 'inline', margin: 0 }}>Options for in-house brands like "Karachi Biscuits", etc.</h3>
-              </span>
-            </summary>
-            <table style={{ width: '100%', borderCollapse: 'collapse', border: '1px solid #ccc' }}>
-              <thead>
-                <tr>
-                    <th style={{ border: '1px solid #ccc' }}>Product Category</th>
-                </tr>
-              </thead>
-              <tbody>
-                    {supermarketMostsellingProductData.length > 0 ? (
-                      supermarketMostsellingProductData.map((supermarket, index) => (
-                        <tr key={index}>
-                          <td style={{ border: '1px solid #ccc' }}>{supermarket.PCname}</td>
-                        </tr>
-                  ))
-                ) : (
-                  <tr>
-                    <td colSpan={3} style={{ border: '1px solid #ccc' }}>Loading data...</td>
-                  </tr>
-                )}
-              </tbody>
-            </table>            
-          </details>
-{/* \\============================================================================================================================           */}
 {/* \\============================================================================================================================           */}
           <details>
             <summary>
@@ -386,8 +356,39 @@ function App() {
             
           </details>
         </div>
+{/* \\============================================================================================================================           */}
 
+          {/* New Expandable Section for options for in-house brands like "Karachi Bakery", etc. */}
+          <details>
+            <summary>
+              <span style={{ display: 'inline' }}>
+                <h3 style={{ display: 'inline', margin: 0 }}>Options for in-house brands like "Karachi Biscuits", etc.</h3>
+              </span>
+            </summary>
+            <table style={{ width: '100%', borderCollapse: 'collapse', border: '1px solid #ccc' }}>
+              <thead>
+                <tr>
+                    <th style={{ border: '1px solid #ccc' }}>Product Category</th>
+                </tr>
+              </thead>
+              <tbody>
+                    {supermarketMostsellingProductData.length > 0 ? (
+                      supermarketMostsellingProductData.map((supermarket, index) => (
+                        <tr key={index}>
+                          <td style={{ border: '1px solid #ccc' }}>{supermarket.PCname}</td>
+                        </tr>
+                  ))
+                ) : (
+                  <tr>
+                    <td colSpan={3} style={{ border: '1px solid #ccc' }}>Loading data...</td>
+                  </tr>
+                )}
+              </tbody>
+            </table>            
+          </details>
 
+{/* \\============================================================================================================================           */}
+{/* \\============================================================================================================================           */}        
 
         {/* Right box: Client Details */}
         <div style={{ 
