@@ -387,6 +387,7 @@ function App() {
               <thead>
                 <tr>
                     <th style={{ border: '1px solid #ccc' }}>Company Names</th>
+                    <th style={{ border: '1px solid #ccc' }}>Brand products</th>
                 </tr>
               </thead>
               <tbody>
@@ -394,6 +395,7 @@ function App() {
                       PrivatebrandsData.map((supermarket, index) => (
                         <tr key={index}>
                           <td style={{ border: '1px solid #ccc' }}>{supermarket.Brandname}</td>
+                          <td style={{ border: '1px solid #ccc' }}>{supermarket.Brandproducts}</td>
                         </tr>
                   ))
                 ) : (
