@@ -123,7 +123,7 @@ function App() {
     { updateDate: "2024-10-28", status: "Completed", updatesDone: "List of Products generally held in a Super Market" },
     { updateDate: "2024-11-01", status: "In Progress", updatesDone: "List of Licenses and Registrations required" },
     { updateDate: "2024-11-05", status: "In Progress", updatesDone: "Swiggy, Instamart, etc. tie-up options, Products Sourcing Leads" },
-    { updateDate: "2024-11-09", status: "Completed", updatesDone: "Products selling the most in Super Markets, Options for in-house brands like "Karachi Biscuits", etc." },
+    { updateDate: "2024-11-09", status: "Completed", updatesDone: "Products selling the most in Super Markets, Options for in-house brands like 'Karachi Biscuits' etc." },
     { updateDate: "2024-11-13", status: "", updatesDone: "" },
     { updateDate: "2024-11-17", status: "", updatesDone: "" },
     { updateDate: "2024-11-21", status: "", updatesDone: "" },
