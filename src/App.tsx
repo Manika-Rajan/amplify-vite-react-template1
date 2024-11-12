@@ -27,6 +27,11 @@ type SupermarketMostsellingProductData = {
   PCname: string;
 };
 
+type PrivatebrandsData = {
+  Brandname: string;
+  Brandproducts: string;
+};
+
 function App() {
   const { signOut } = useAuthenticator();
 
@@ -44,6 +49,7 @@ function App() {
   const [supermarketData, setSupermarketData] = useState<SupermarketData[]>([]);
   const [supermarketProductData, setSupermarketProductData] = useState<SupermarketProductData[]>([]);
   const [supermarketMostsellingProductData, setSupermarketMostsellingProductData] = useState<SupermarketMostsellingProductData[]>([]);
+  const [PrivatebrandsData, setPrivatebrandsData] = useState<PrivatebrandsData[]>([]);
 
   // Fetch data from Lambda on component mount
   useEffect(() => {
@@ -91,11 +97,23 @@ function App() {
         console.error('Error fetching supermarket Product data:', error);
       }
     }
+
+    
+    async function fetchPrivatebrandsData() {
+      try {
+        const response = await fetch('https://f0sv5okep2.execute-api.ap-south-1.amazonaws.com/default/pmounica_mini_supermarket_4');
+        const data: PrivatebrandsData[] = await response.json();
+        setPrivatebrandsData(data);
+      } catch (error) {
+        console.error('Error fetching supermarket Private Brands data:', error);
+      }
+    }
     
     fetchShopData();
     fetchSupermarketData();
     fetchSupermarketProductData();
     fetchSupermarketMostsellingProductData();
+    fetchPrivatebrandsData();
   }, []);
 
   // Sample data for the updates table
@@ -368,14 +386,14 @@ function App() {
             <table style={{ width: '100%', borderCollapse: 'collapse', border: '1px solid #ccc' }}>
               <thead>
                 <tr>
-                    <th style={{ border: '1px solid #ccc' }}>Product Category</th>
+                    <th style={{ border: '1px solid #ccc' }}>Company Names</th>
                 </tr>
               </thead>
               <tbody>
-                    {supermarketMostsellingProductData.length > 0 ? (
-                      supermarketMostsellingProductData.map((supermarket, index) => (
+                    {PrivatebrandsData.length > 0 ? (
+                      PrivatebrandsData.map((supermarket, index) => (
                         <tr key={index}>
-                          <td style={{ border: '1px solid #ccc' }}>{supermarket.PCname}</td>
+                          <td style={{ border: '1px solid #ccc' }}>{supermarket.Brandname}</td>
                         </tr>
                   ))
                 ) : (
