@@ -348,6 +348,12 @@ function App() {
               </span>
             </summary>
             <p>&emsp;&emsp;1. Shop licence from municipality</p>
+            <p>&emsp;&emsp;&emsp;&emsp;DOCUMENTS REQUIRED:</p>
+            <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ID proof</p>
+            <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;1.	Aadhaar Card – Individual</p>
+            <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.	PAN/Incorporation Certificate - Business</p>
+            <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Address proof</p>
+            <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;3.	Lease Deed/Legal Occupancy</p>
             <p>&emsp;&emsp;2. Labour licence for staff</p>
             <p>&emsp;&emsp;3. Weighing machine licence</p>
             <p>&emsp;&emsp;4. GST registration if we are expecting more than 40lakhs Turnover per year</p>
