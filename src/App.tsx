@@ -348,7 +348,7 @@ function App() {
               </span>
             </summary>
             <p>&emsp;&emsp;1. Shop licence from municipality</p>
-            <p>&emsp;&emsp;&emsp;&emsp;DOCUMENTS REQUIRED:</p>
+            <p>&emsp;&emsp;&emsp;&emsp;<B></B>DOCUMENTS REQUIRED:</B></p>
             <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ID proof</p>
             <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;1.	Aadhaar Card – Individual</p>
             <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.	PAN/Incorporation Certificate - Business</p>
