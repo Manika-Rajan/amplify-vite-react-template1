@@ -347,17 +347,17 @@ function App() {
                 <h3 style={{ display: 'inline', margin: 0 }}>List of Licenses and Registrations required</h3> (work in Progress)
               </span>
             </summary>
-            <details><summary style={{margin: '0px 0px 0px 50px'}}><span style={{ display: 'inline' }}><b>1. Shop licence from municipality</b></span></summary>
+            <details><summary style={{margin: '0px 0px 0px 50px'}}><span style={{ display: 'inline' }}>1. Shop licence from municipality</span></summary>
             <p>&emsp;&emsp;&emsp;&emsp;<u>DOCUMENTS REQUIRED:</u></p>
             <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<u>ID proof</u></p>
             <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;1.	Aadhaar Card – Individual</p>
             <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.	PAN/Incorporation Certificate - Business</p>
             <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<u>Address proof</u></p>
             <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;3.	Lease Deed/Legal Occupancy</p></details>
-            <details><summary style={{margin: '0px 0px 0px 50px'}}><span style={{ display: 'inline' }}><b>2. Labour licence for staff</b></span></summary></details>
-            <details><summary style={{margin: '0px 0px 0px 50px'}}><span style={{ display: 'inline' }}><b>3. Weighing machine licence</b></span></summary></details>
-            <details><summary style={{margin: '0px 0px 0px 50px'}}><span style={{ display: 'inline' }}><b>4. GST registration if we are expecting more than 40lakhs Turnover per year</b></span></summary></details>
-            <details><summary style={{margin: '0px 0px 0px 50px'}}><span style={{ display: 'inline' }}><b>5. FSSAI certificate</b></span></summary></details>
+            <details><summary style={{margin: '0px 0px 0px 50px'}}><span style={{ display: 'inline' }}>2. Labour licence for staff</span></summary></details>
+            <details><summary style={{margin: '0px 0px 0px 50px'}}><span style={{ display: 'inline' }}>3. Weighing machine licence</span></summary></details>
+            <details><summary style={{margin: '0px 0px 0px 50px'}}><span style={{ display: 'inline' }}>4. GST registration if we are expecting more than 40lakhs Turnover per year</span></summary></details>
+            <details><summary style={{margin: '0px 0px 0px 50px'}}><span style={{ display: 'inline' }}>5. FSSAI certificate</span></summary></details>
             
           </details>
 
