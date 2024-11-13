@@ -347,13 +347,13 @@ function App() {
                 <h3 style={{ display: 'inline', margin: 0 }}>List of Licenses and Registrations required</h3> (work in Progress)
               </span>
             </summary>
-            <p>&emsp;&emsp;1. Shop licence from municipality</p>
+            <details><summary><p>&emsp;&emsp;1. Shop licence from municipality</p></summary>
             <p>&emsp;&emsp;&emsp;&emsp;<b>DOCUMENTS REQUIRED:</b></p>
             <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>ID proof</b></p>
             <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;1.	Aadhaar Card – Individual</p>
             <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.	PAN/Incorporation Certificate - Business</p>
             <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>Address proof</b></p>
-            <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;3.	Lease Deed/Legal Occupancy</p>
+            <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;3.	Lease Deed/Legal Occupancy</p><details>
             <p>&emsp;&emsp;2. Labour licence for staff</p>
             <p>&emsp;&emsp;3. Weighing machine licence</p>
             <p>&emsp;&emsp;4. GST registration if we are expecting more than 40lakhs Turnover per year</p>
