@@ -354,10 +354,10 @@ function App() {
             <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.	PAN/Incorporation Certificate - Business</p>
             <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<u>Address proof</u></p>
             <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;3.	Lease Deed/Legal Occupancy</p></details>
-            <details><summary style={{margin: '0px 0px 0px 50px'}}><span style={{ display: 'inline' }}><b>2. Labour licence for staff</b></span></summary>
-            <details><summary style={{margin: '0px 0px 0px 50px'}}><span style={{ display: 'inline' }}><b>3. Weighing machine licence</b></span></summary>
-            <details><summary style={{margin: '0px 0px 0px 50px'}}><span style={{ display: 'inline' }}><b>4. GST registration if we are expecting more than 40lakhs Turnover per year</b></span></summary>
-            <details><summary style={{margin: '0px 0px 0px 50px'}}><span style={{ display: 'inline' }}><b>5. FSSAI certificate</b></span></summary>
+            <details><summary style={{margin: '0px 0px 0px 50px'}}><span style={{ display: 'inline' }}><b>2. Labour licence for staff</b></span></summary></details>
+            <details><summary style={{margin: '0px 0px 0px 50px'}}><span style={{ display: 'inline' }}><b>3. Weighing machine licence</b></span></summary></details>
+            <details><summary style={{margin: '0px 0px 0px 50px'}}><span style={{ display: 'inline' }}><b>4. GST registration if we are expecting more than 40lakhs Turnover per year</b></span></summary></details>
+            <details><summary style={{margin: '0px 0px 0px 50px'}}><span style={{ display: 'inline' }}><b>5. FSSAI certificate</b></span></summary></details>
             
           </details>
 
