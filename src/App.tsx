@@ -347,7 +347,7 @@ function App() {
                 <h3 style={{ display: 'inline', margin: 0 }}>List of Licenses and Registrations required</h3> (work in Progress)
               </span>
             </summary>
-            <details><summary><span style={{ display: 'inline' }}>1. Shop licence from municipality</span></summary>
+            <details><summary style={{margin: '0px 0px 0px 50px'}}><span style={{ display: 'inline' }}>1. Shop licence from municipality</span></summary>
             <p>&emsp;&emsp;&emsp;&emsp;<b>DOCUMENTS REQUIRED:</b></p>
             <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>ID proof</b></p>
             <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;1.	Aadhaar Card – Individual</p>
