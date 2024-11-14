@@ -424,7 +424,7 @@ function App() {
         flexDirection: 'column', 
         gap: '20px',
         padding: '10px', 
-        backgroundColor: '#f9f9f9',
+        // backgroundColor: '#f9f9f9',
         textAlign: 'left', 
       }}>
         {/* Client Details */}
@@ -441,7 +441,7 @@ function App() {
         {/* Final Report */}
         <div style={{ padding: '10px', backgroundColor: '#e6e6e6', borderRadius: '8px' }}>
           <h3>Final Report</h3>
-          <p>Content of the final report goes here.</p>
+          <p><strong>Final Report :</strong> download link (work in progress).</p>
         </div>
       </div>
     </div>
