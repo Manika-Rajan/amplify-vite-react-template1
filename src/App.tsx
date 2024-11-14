@@ -419,7 +419,7 @@ function App() {
 
       {/* Right box: Client Details and Final Report */}
       <div style={{ 
-        flex: '1', 
+        flex: '1 1 20%', 
         display: 'flex', 
         flexDirection: 'column', 
         gap: '20px',
