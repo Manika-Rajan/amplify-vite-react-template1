@@ -417,40 +417,36 @@ function App() {
 {/* \\============================================================================================================================           */}        
         </div>
 
-
-        {/* Right box: Client Details */}
-        <div style={{ 
-          flexBasis: '20%',          
-          padding: '10px 20px', 
-          backgroundColor: '#e0e0e0', 
-          boxSizing: 'border-box',       
-          textAlign: 'left',           
-        }}>
-          <h2 style={{ textAlign: 'center'}}>Client Profile</h2>
-          <p><strong>Name:</strong> {clientDetails.name}</p>
-          <p><strong>Age:</strong> {clientDetails.age}</p>
-          <p><strong>Education:</strong> {clientDetails.Education}</p>
-          <p><strong>Previous Work Experience:</strong> {clientDetails.PreviousWE}</p>
-          <p><strong>Start Date:</strong> {clientDetails.startDate}</p>
-          <p><strong>End Date:</strong> {clientDetails.endDate}</p>
+      {/* Right box: Client Details and Final Report */}
+      <div style={{ 
+        flex: '1', 
+        display: 'flex', 
+        flexDirection: 'column', 
+        gap: '20px',
+        padding: '10px', 
+        backgroundColor: '#f9f9f9',
+      }}>
+        {/* Client Details */}
+        <div style={{ padding: '10px', backgroundColor: '#e6e6e6', borderRadius: '8px' }}>
+          <h3>Client Details</h3>
+          <p>Name: {clientDetails.name}</p>
+          <p>Age: {clientDetails.age}</p>
+          <p>Education: {clientDetails.Education}</p>
+          <p>Previous Work Experience: {clientDetails.PreviousWE}</p>
+          <p>Project Start Date: {clientDetails.startDate}</p>
+          <p>Project End Date: {clientDetails.endDate}</p>
         </div>
 
-  {/* \\============================================================================================================================           */}        
-  
-  {/* Right box: Final Report */}
-        <div style={{ 
-          flexBasis: '20%',          
-          padding: '10px 20px', 
-          backgroundColor: '#e0e0e0', 
-          boxSizing: 'border-box',       
-          textAlign: 'left',           
-        }}>
-          <h2 style={{ textAlign: 'center'}}>Final Report</h2>
-          <p><strong>Final Report - Full Business Plan - Mini Super Market - P Mounica - <u>Download here</u></strong></p>
+        {/* Final Report */}
+        <div style={{ padding: '10px', backgroundColor: '#e6e6e6', borderRadius: '8px' }}>
+          <h3>Final Report</h3>
+          <p>Content of the final report goes here.</p>
         </div>
       </div>
-
- {/* \\============================================================================================================================           */}         
+          
+          
+          
+{/* \\============================================================================================================================           */}         
   
       {/* Updates Section */}
       <div style={{ 
