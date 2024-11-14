@@ -436,6 +436,23 @@ function App() {
         </div>
       </div>
 
+  {/* \\============================================================================================================================           */}        
+  
+  {/* Right box: Final Report */}
+        <div style={{ 
+          flexBasis: '20%',          
+          padding: '10px 20px', 
+          backgroundColor: '#e0e0e0', 
+          boxSizing: 'border-box',       
+          textAlign: 'left',           
+        }}>
+          <h2 style={{ textAlign: 'center'}}>Final Report</h2>
+          <p><strong>Final Report - Full Business Plan - Mini Super Market - P Mounica - <u>Download here</u></strong></p>
+        </div>
+      </div>
+
+ {/* \\============================================================================================================================           */}         
+  
       {/* Updates Section */}
       <div style={{ 
         marginTop: '375px', 
