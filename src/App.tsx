@@ -434,7 +434,6 @@ function App() {
           <p><strong>Start Date:</strong> {clientDetails.startDate}</p>
           <p><strong>End Date:</strong> {clientDetails.endDate}</p>
         </div>
-      </div>
 
   {/* \\============================================================================================================================           */}        
   
