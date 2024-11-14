@@ -419,22 +419,23 @@ function App() {
 
       {/* Right box: Client Details and Final Report */}
       <div style={{ 
-        flex: '1 1 20%', 
+        flex: '1 1 25%', 
         display: 'flex', 
         flexDirection: 'column', 
         gap: '20px',
         padding: '10px', 
         backgroundColor: '#f9f9f9',
+        textAlign: 'left', 
       }}>
         {/* Client Details */}
         <div style={{ padding: '10px', backgroundColor: '#e6e6e6', borderRadius: '8px' }}>
-          <h3>Client Details</h3>
-          <p>Name: {clientDetails.name}</p>
-          <p>Age: {clientDetails.age}</p>
-          <p>Education: {clientDetails.Education}</p>
-          <p>Previous Work Experience: {clientDetails.PreviousWE}</p>
-          <p>Project Start Date: {clientDetails.startDate}</p>
-          <p>Project End Date: {clientDetails.endDate}</p>
+          <h3><strong>Client Details</strong></h3>
+          <p><strong>Name:</strong> {clientDetails.name}</p>
+          <p><strong>Age:</strong> {clientDetails.age}</p>
+          <p><strong>Education:</strong> {clientDetails.Education}</p>
+          <p><strong>Previous Work Experience:</strong> {clientDetails.PreviousWE}</p>
+          <p><strong>Project Start Date:</strong> {clientDetails.startDate}</p>
+          <p><strong>Project End Date:</strong> {clientDetails.endDate}</p>
         </div>
 
         {/* Final Report */}
