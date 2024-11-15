@@ -414,6 +414,23 @@ function App() {
           </details>
 
 {/* \\============================================================================================================================           */}
+            <details>
+            <summary>
+              <span style={{ display: 'inline' }}>
+                <h3 style={{ display: 'inline', margin: 0 }}>References</h3> (work in Progress)
+              </span>
+            </summary>
+            <p>&emsp;&emsp;List of Company distributors</p>
+            <p>&emsp;&emsp;&emsp;https://www.ghmc.gov.in/Trade.aspx</p>
+            <p>&emsp;&emsp;&emsp;https://vijetha.in/</p>
+            <p>&emsp;&emsp;&emsp;https://ratnadeep.com/category</p>  
+            <p>&emsp;&emsp;&emsp;https://moreretail.in/</p>
+            <p>&emsp;&emsp;&emsp;https://www.qmart.in/categories.php</p>
+            <p>&emsp;&emsp;&emsp;https://www.sparindia.com/</p>
+              
+          </details>
+
+  {/* \\============================================================================================================================           */}
 {/* \\============================================================================================================================           */}        
         </div>
 
