@@ -419,9 +419,11 @@ function App() {
                 <h3 style={{ display: 'inline', margin: 0 }}>Swiggy, Instamart, etc. tie-up options</h3>
               </span>
             </summary>
+            <p>&emsp;&emsp;&emsp;For Swiggy</p>
             <p>&emsp;&emsp;&emsp;Step 1 : Register at Swiggy partner registration page, link : https://www.swiggy.com/instamart-partner</p>
             <p>&emsp;&emsp;&emsp;Step 2 : Fill and submit the instamart partner registration form, link : https://docs.google.com/forms/d/e/1FAIpQLScC5hEe2Dbk4fH5yoN75x0_bNnA5czT4xPbem7FnJBPH08QOg/viewform </p>
-              
+            <p>&emsp;&emsp;&emsp;For Blinkit : Register at https://blinkit.com/partner </p>
+            <p>&emsp;&emsp;&emsp;Blinkit Seller registration link : https://seller.blinkit.com/ </p>
           </details>
 
   {/* \\============================================================================================================================           */}
