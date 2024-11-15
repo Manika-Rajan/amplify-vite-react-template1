@@ -420,7 +420,7 @@ function App() {
               </span>
             </summary>
             <p>&emsp;&emsp;&emsp;Step 1 : Register at Swiggy partner registration page, link : https://www.swiggy.com/instamart-partner</p>
-            <p>&emsp;&emsp;&emsp;Step 2 : Fill and submit the instamart pertner registration form, link : https://docs.google.com/forms/d/e/1FAIpQLScC5hEe2Dbk4fH5yoN75x0_bNnA5czT4xPbem7FnJBPH08QOg/viewform </p>
+            <p>&emsp;&emsp;&emsp;Step 2 : Fill and submit the instamart partner registration form, link : https://docs.google.com/forms/d/e/1FAIpQLScC5hEe2Dbk4fH5yoN75x0_bNnA5czT4xPbem7FnJBPH08QOg/viewform </p>
               
           </details>
 
