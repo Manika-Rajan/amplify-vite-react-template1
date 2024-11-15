@@ -472,7 +472,7 @@ function App() {
         {/* Final Report */}
         <div style={{ padding: '10px', backgroundColor: '#FBCFCD', borderRadius: '8px' }}>
           <h3>Final Report</h3>
-          <p><strong>Final Report :</strong> <u>download-link</u> (work in progress).</p>
+          <p><strong>Final Report :</strong> <u>download-Link</u> (work in progress).</p>
         </div>
       </div>
     </div>
