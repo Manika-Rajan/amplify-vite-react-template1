@@ -439,6 +439,7 @@ function App() {
             <p>&emsp;&emsp;&emsp;https://moreretail.in/</p>
             <p>&emsp;&emsp;&emsp;https://www.qmart.in/categories.php</p>
             <p>&emsp;&emsp;&emsp;https://www.sparindia.com/</p>
+            <p>&emsp;&emsp;&emsp;https://www.swiggy.com/instamart-partner</p>  
               
           </details>
 
