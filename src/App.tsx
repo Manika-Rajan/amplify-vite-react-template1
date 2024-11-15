@@ -460,7 +460,7 @@ function App() {
       }}>
         {/* Client Details */}
         <div style={{ padding: '10px', backgroundColor: '#e6e6e6', borderRadius: '8px' }}>
-          <h3><strong>Client Details</strong></h3>
+          <h3 style={{ textAlign: 'center' }}><strong>Client Details</strong></h3>
           <p><strong>Name:</strong> {clientDetails.name}</p>
           <p><strong>Age:</strong> {clientDetails.age}</p>
           <p><strong>Education:</strong> {clientDetails.Education}</p>
