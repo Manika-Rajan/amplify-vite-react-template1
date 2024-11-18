@@ -360,15 +360,15 @@ function App() {
             <details><summary style={{margin: '0px 0px 0px 50px'}}><span style={{ display: 'inline' }}>5. Trade License from the municipal authority</span></summary>
                           <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;1.	Important Points</p>
                           <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(a)  It takes atleast 8 days to obtain a trade license from the local municipal authority. </p>
-                          <p>&emsp;&emsp;&emsp;&emsp;<u>DOCUMENTS REQUIRED:</u></p>
-                          <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(a) A proper front-facing photograph of the supermarket where your goods are being sold</p>
-                          <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(b)	Aadhaar Card – Individual</p>
-                          <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(c)	PAN Card</p>
-                          <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(d) Photograph of the owner</p>
-                          <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(e) Certificate of establishment</p>
-                          <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(f) Address proof of the owner</p>
-                          <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(g)	Premises Proof</p>
-                          <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(h)	Bank statement</p>
+                          <p>&emsp;&emsp;&emsp;&emsp;&emsp;<u>DOCUMENTS REQUIRED:</u></p>
+                          <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(a) A proper front-facing photograph of the supermarket where your goods are being sold</p>
+                          <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(b)	Aadhaar Card – Individual</p>
+                          <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(c)	PAN Card</p>
+                          <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(d) Photograph of the owner</p>
+                          <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(e) Certificate of establishment</p>
+                          <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(f) Address proof of the owner</p>
+                          <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(g)	Premises Proof</p>
+                          <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(h)	Bank statement</p>
                           </details>
             <details><summary style={{margin: '0px 0px 0px 50px'}}><span style={{ display: 'inline' }}>6. FSSAI certificate</span></summary>
                           <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;1.	Important Points</p>
