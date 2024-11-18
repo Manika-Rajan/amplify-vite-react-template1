@@ -356,7 +356,8 @@ function App() {
             <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;3.	Lease Deed/Legal Occupancy</p></details>
             <details><summary style={{margin: '0px 0px 0px 50px'}}><span style={{ display: 'inline' }}>2. Labour licence for staff</span></summary></details>
             <details><summary style={{margin: '0px 0px 0px 50px'}}><span style={{ display: 'inline' }}>3. Weighing machine licence</span></summary></details>
-            <details><summary style={{margin: '0px 0px 0px 50px'}}><span style={{ display: 'inline' }}>4. GST registration if we are expecting more than 40lakhs Turnover per year</span></summary>
+            <details><summary style={{margin: '0px 0px 0px 50px'}}><span style={{ display: 'inline' }}>4. GST registration if we are expecting more than 40lakhs Turnover per year</span></summary></details>
+            <details><summary style={{margin: '0px 0px 0px 50px'}}><span style={{ display: 'inline' }}>5. Trade License from the municipal authority</span></summary>
                           <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;1.	Important Points</p>
                           <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(a)  It takes atleast 8 days to obtain a trade license from the local municipal authority. </p>
                           <p>&emsp;&emsp;&emsp;&emsp;<u>DOCUMENTS REQUIRED:</u></p>
@@ -369,7 +370,7 @@ function App() {
                           <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(g)	Premises Proof</p>
                           <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(h)	Bank statement</p>
                           </details>
-            <details><summary style={{margin: '0px 0px 0px 50px'}}><span style={{ display: 'inline' }}>5. FSSAI certificate</span></summary>
+            <details><summary style={{margin: '0px 0px 0px 50px'}}><span style={{ display: 'inline' }}>6. FSSAI certificate</span></summary>
                           <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;1.	Important Points</p>
                           <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(a) Needs to be renewed every 5 years. The FSSAI license gets canceled after 5 years if it is not renewed.</p></details>
             
