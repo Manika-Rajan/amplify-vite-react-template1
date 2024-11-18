@@ -357,7 +357,9 @@ function App() {
             <details><summary style={{margin: '0px 0px 0px 50px'}}><span style={{ display: 'inline' }}>2. Labour licence for staff</span></summary></details>
             <details><summary style={{margin: '0px 0px 0px 50px'}}><span style={{ display: 'inline' }}>3. Weighing machine licence</span></summary></details>
             <details><summary style={{margin: '0px 0px 0px 50px'}}><span style={{ display: 'inline' }}>4. GST registration if we are expecting more than 40lakhs Turnover per year</span></summary></details>
-            <details><summary style={{margin: '0px 0px 0px 50px'}}><span style={{ display: 'inline' }}>5. FSSAI certificate</span></summary></details>
+            <details><summary style={{margin: '0px 0px 0px 50px'}}><span style={{ display: 'inline' }}>5. FSSAI certificate</span></summary>
+            <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;4.	Important Notes</p></details>
+            <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(a) Needs to be renewed every 5 years. The FSSAI license gets canceled after 5 years if it is not renewed.</p></details>
             
           </details>
 
