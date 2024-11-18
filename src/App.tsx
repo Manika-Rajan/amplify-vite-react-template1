@@ -356,7 +356,19 @@ function App() {
             <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;3.	Lease Deed/Legal Occupancy</p></details>
             <details><summary style={{margin: '0px 0px 0px 50px'}}><span style={{ display: 'inline' }}>2. Labour licence for staff</span></summary></details>
             <details><summary style={{margin: '0px 0px 0px 50px'}}><span style={{ display: 'inline' }}>3. Weighing machine licence</span></summary></details>
-            <details><summary style={{margin: '0px 0px 0px 50px'}}><span style={{ display: 'inline' }}>4. GST registration if we are expecting more than 40lakhs Turnover per year</span></summary></details>
+            <details><summary style={{margin: '0px 0px 0px 50px'}}><span style={{ display: 'inline' }}>4. GST registration if we are expecting more than 40lakhs Turnover per year</span></summary>
+                          <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;1.	Important Points</p>
+                          <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(a)  It takes atleast 8 days to obtain a trade license from the local municipal authority. </p>
+                          <p>&emsp;&emsp;&emsp;&emsp;<u>DOCUMENTS REQUIRED:</u></p>
+                          <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(a) A proper front-facing photograph of the supermarket where your goods are being sold</p>
+                          <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(b)	Aadhaar Card – Individual</p>
+                          <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(c)	PAN Card</p>
+                          <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(d) Photograph of the owner</p>
+                          <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(e) Certificate of establishment</p>
+                          <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(f) Address proof of the owner</p>
+                          <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(g)	Premises Proof</p>
+                          <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(h)	Bank statement</p>
+                          </details>
             <details><summary style={{margin: '0px 0px 0px 50px'}}><span style={{ display: 'inline' }}>5. FSSAI certificate</span></summary>
                           <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;1.	Important Points</p>
                           <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(a) Needs to be renewed every 5 years. The FSSAI license gets canceled after 5 years if it is not renewed.</p></details>
@@ -444,6 +456,7 @@ function App() {
             <p>&emsp;&emsp;&emsp;https://www.qmart.in/categories.php</p>
             <p>&emsp;&emsp;&emsp;https://www.sparindia.com/</p>
             <p>&emsp;&emsp;&emsp;https://www.swiggy.com/instamart-partner</p>  
+            <p>&emsp;&emsp;&emsp;https://www.gfreshmart.com/start-a-mini-supermarket-franchise/#:~:text=If%20you%20are%20starting%20up,if%20it%20is%20not%20renewed.</p>
               
           </details>
 
