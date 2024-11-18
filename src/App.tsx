@@ -401,7 +401,7 @@ function App() {
                 <h3 style={{ display: 'inline', margin: 0 }}>Cost breakdown: rent, employee salaries, infrastructure, furniture, electricity bill, new AC units</h3> (work in Progress)
               </span>
             </summary>
-            <details></details>
+            </details>
 
   {/* \\============================================================================================================================           */}
   {/* \\============================================================================================================================           */}
