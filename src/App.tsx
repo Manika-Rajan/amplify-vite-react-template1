@@ -394,7 +394,16 @@ function App() {
             <p>&emsp;&emsp;&emsp;9. Local traders for Dals, pulses & Oils</p>
             
           </details>
+{/* \\============================================================================================================================           */}
+          <details>
+            <summary>
+              <span style={{ display: 'inline' }}>
+                <h3 style={{ display: 'inline', margin: 0 }}>Cost breakdown: rent, employee salaries, infrastructure, furniture, electricity bill, new AC units</h3> (work in Progress)
+              </span>
+            </summary>
+            <details></details>
 
+  {/* \\============================================================================================================================           */}
   {/* \\============================================================================================================================           */}
 
           {/* New Expandable Section for options for in-house brands like "Karachi Bakery", etc. */}
