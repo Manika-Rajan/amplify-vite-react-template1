@@ -32,6 +32,15 @@ type PrivatebrandsData = {
   Brandproducts: string;
 };
 
+type DistributorsData = {
+  Distributername: string;
+  DistributerLocation: string;
+  DistributerAddress: string;
+  DistributerContactno: string;
+  DistributerCategoriessupplied: string;
+  DistributerCatalog: string;
+};
+
 function App() {
   const { signOut } = useAuthenticator();
 
@@ -108,12 +117,24 @@ function App() {
         console.error('Error fetching supermarket Private Brands data:', error);
       }
     }
+
+        
+    async function fetchDistributorsData() {
+      try {
+        const response = await fetch('https://68r0cimigk.execute-api.ap-south-1.amazonaws.com/default/pmounica_mini_supermarket_5');
+        const data: DistributorsData[] = await response.json();
+        setDistributorsData(data);
+      } catch (error) {
+        console.error('Error fetching Distributors data:', error);
+      }
+    }
     
     fetchShopData();
     fetchSupermarketData();
     fetchSupermarketProductData();
     fetchSupermarketMostsellingProductData();
     fetchPrivatebrandsData();
+    fetchDistributorsData();
   }, []);
 
   // Sample data for the updates table
@@ -392,8 +413,49 @@ function App() {
             <p>&emsp;&emsp;&emsp;7. MARICO</p>
             <p>&emsp;&emsp;&emsp;8. BRITANNIA</p>
             <p>&emsp;&emsp;&emsp;9. Local traders for Dals, pulses & Oils</p>
+    {/* \\============================================================================================================================           */}
+              <details>
+            <summary>
+              <span style={{ display: 'inline' }}>
+                <h3 style={{ display: 'inline', margin: 0 }}>List of Distributors</h3>
+              </span>
+            </summary>
+            <table style={{ width: '100%', borderCollapse: 'collapse', border: '1px solid #ccc' }}>
+              <thead>
+                <tr>
+                    <th style={{ border: '1px solid #ccc' }}>Distributer Name</th>
+                    <th style={{ border: '1px solid #ccc' }}>Distributer Location</th>
+                    <th style={{ border: '1px solid #ccc' }}>Distributer Address</th>
+                    <th style={{ border: '1px solid #ccc' }}>Distributer Contact Number</th>
+                    <th style={{ border: '1px solid #ccc' }}>Distributer Categories supplied</th>
+                    <th style={{ border: '1px solid #ccc' }}>Distributer Catalogue</th>
+                </tr>
+              </thead>
+              <tbody>
+                    {DistributorsData.length > 0 ? (
+                      DistributorsData.map((Distributors, index) => (
+                        <tr key={index}>
+                          <td style={{ border: '1px solid #ccc' }}>{Distributors.Distributername}</td>
+                          <td style={{ border: '1px solid #ccc' }}>{Distributors.DistributerLocation}</td>
+                          <td style={{ border: '1px solid #ccc' }}>{Distributors.DistributerAddress}</td>
+                          <td style={{ border: '1px solid #ccc' }}>{Distributors.DistributerContactno}</td>
+                          <td style={{ border: '1px solid #ccc' }}>{Distributors.DistributerCategoriessupplied}</td>
+                          <td style={{ border: '1px solid #ccc' }}>{Distributors.DistributerCatalog}</td>
+                        </tr>
+                  ))
+                ) : (
+                  <tr>
+                    <td colSpan={3} style={{ border: '1px solid #ccc' }}>Loading data...</td>
+                  </tr>
+                )}
+              </tbody>
+            </table>            
+          </details>
+
+{/* \\============================================================================================================================           */}                
             
           </details>
+{/* \\============================================================================================================================           */}
 {/* \\============================================================================================================================           */}
           <details>
             <summary>
