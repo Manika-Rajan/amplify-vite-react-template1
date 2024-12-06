@@ -414,12 +414,12 @@ function App() {
             <p>&emsp;&emsp;&emsp;7. MARICO</p>
             <p>&emsp;&emsp;&emsp;8. BRITANNIA</p>
     {/* \\============================================================================================================================           */}
-            <p>&emsp;&emsp;&emsp;9. Local traders for Dals, pulses & Oils</p>
+  
     
               <details>
             <summary style={{margin: '0px 0px 0px 50px'}}>
               <span style={{ display: 'inline' }}>
-                <h3 style={{ display: 'inline', margin: 0 }}>&emsp;&emsp;&emsp;9. Local traders for Dals, pulses & Oils</h3>
+                <h3 style={{ display: 'inline', margin: 0 }}>9. Local traders for Dals, pulses & Oils</h3>
               </span>
             </summary>
             <table style={{ width: '100%', borderCollapse: 'collapse', border: '1px solid #ccc' }}>
