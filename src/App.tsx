@@ -461,14 +461,6 @@ function App() {
               </span>
             </summary>
             </details>
-            <p>&emsp;&emsp;&emsp;1. HLL</p>
-            <p>&emsp;&emsp;&emsp;2. ITC</p>
-            <p>&emsp;&emsp;&emsp;3. Godrej</p>
-            <p>&emsp;&emsp;&emsp;4. WIPRO</p>
-            <p>&emsp;&emsp;&emsp;5. DABUR</p>
-            <p>&emsp;&emsp;&emsp;6. P&G</p>
-            <p>&emsp;&emsp;&emsp;7. MARICO</p>
-            <p>&emsp;&emsp;&emsp;8. BRITANNIA</p>
     {/* \\============================================================================================================================           */}
   
     
