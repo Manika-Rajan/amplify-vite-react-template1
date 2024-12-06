@@ -59,6 +59,7 @@ function App() {
   const [supermarketProductData, setSupermarketProductData] = useState<SupermarketProductData[]>([]);
   const [supermarketMostsellingProductData, setSupermarketMostsellingProductData] = useState<SupermarketMostsellingProductData[]>([]);
   const [PrivatebrandsData, setPrivatebrandsData] = useState<PrivatebrandsData[]>([]);
+  const [DistributorsData, setDistributorsData] = useState<DistributorsData[]>([]);
 
   // Fetch data from Lambda on component mount
   useEffect(() => {
