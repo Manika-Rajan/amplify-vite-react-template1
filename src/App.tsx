@@ -405,6 +405,20 @@ function App() {
               </span>
             </summary>
             <p>&emsp;&emsp;List of Company distributors</p>
+            <details>
+            <summary style={{margin: '0px 0px 0px 50px'}}>
+              <span style={{ display: 'inline' }}>
+                <p style={{ display: 'inline', margin: 0 }}>1. HLL</p>
+                <p style={{ display: 'inline', margin: 0 }}>2. ITC</p>
+                <p style={{ display: 'inline', margin: 0 }}>3. Godrej</p>
+                <p style={{ display: 'inline', margin: 0 }}>4. WIPRO</p>
+                <p style={{ display: 'inline', margin: 0 }}>5. DABUR</p>
+                <p style={{ display: 'inline', margin: 0 }}>6. P&G</p>
+                <p style={{ display: 'inline', margin: 0 }}>7. MARICO</p>
+                <p style={{ display: 'inline', margin: 0 }}>8. BRITANNIA</p>
+              </span>
+            </summary>
+            </details>
             <p>&emsp;&emsp;&emsp;1. HLL</p>
             <p>&emsp;&emsp;&emsp;2. ITC</p>
             <p>&emsp;&emsp;&emsp;3. Godrej</p>
