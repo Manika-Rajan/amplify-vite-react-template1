@@ -417,7 +417,7 @@ function App() {
             <p>&emsp;&emsp;&emsp;9. Local traders for Dals, pulses & Oils</p>
     
               <details>
-            <summary style={{margin: '0px 0px 0px 50px'}}><span style={{ display: 'inline' }}>
+            <summary style={{margin: '0px 0px 0px 50px'}}>
               <span style={{ display: 'inline' }}>
                 <h3 style={{ display: 'inline', margin: 0 }}>&emsp;&emsp;&emsp;9. Local traders for Dals, pulses & Oils</h3>
               </span>
