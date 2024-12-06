@@ -409,12 +409,54 @@ function App() {
             <summary style={{margin: '0px 0px 0px 50px'}}>
               <span style={{ display: 'inline' }}>
                 <p style={{ display: 'inline', margin: 0 }}>1. HLL</p>
+              </span>
+            </summary>
+            </details>
+                <details>
+            <summary style={{margin: '0px 0px 0px 50px'}}>
+              <span style={{ display: 'inline' }}>
                 <p style={{ display: 'inline', margin: 0 }}>2. ITC</p>
+              </span>
+            </summary>
+            </details>
+                <details>
+            <summary style={{margin: '0px 0px 0px 50px'}}>
+              <span style={{ display: 'inline' }}>
                 <p style={{ display: 'inline', margin: 0 }}>3. Godrej</p>
+              </span>
+            </summary>
+            </details>
+                <details>
+            <summary style={{margin: '0px 0px 0px 50px'}}>
+              <span style={{ display: 'inline' }}>
                 <p style={{ display: 'inline', margin: 0 }}>4. WIPRO</p>
+              </span>
+            </summary>
+            </details>
+                <details>
+            <summary style={{margin: '0px 0px 0px 50px'}}>
+              <span style={{ display: 'inline' }}>
                 <p style={{ display: 'inline', margin: 0 }}>5. DABUR</p>
+              </span>
+            </summary>
+            </details>
+                <details>
+            <summary style={{margin: '0px 0px 0px 50px'}}>
+              <span style={{ display: 'inline' }}>
                 <p style={{ display: 'inline', margin: 0 }}>6. P&G</p>
+              </span>
+            </summary>
+            </details>
+                <details>
+            <summary style={{margin: '0px 0px 0px 50px'}}>
+              <span style={{ display: 'inline' }}>
                 <p style={{ display: 'inline', margin: 0 }}>7. MARICO</p>
+              </span>
+            </summary>
+            </details>
+                <details>
+            <summary style={{margin: '0px 0px 0px 50px'}}>
+              <span style={{ display: 'inline' }}>
                 <p style={{ display: 'inline', margin: 0 }}>8. BRITANNIA</p>
               </span>
             </summary>
