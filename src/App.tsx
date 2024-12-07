@@ -366,7 +366,7 @@ function App() {
           <details>
             <summary>
               <span style={{ display: 'inline' }}>
-                <h3 style={{ display: 'inline', margin: 0 }}>List of Licenses and Registrations required</h3> (work in Progress)
+                <h3 style={{ display: 'inline', margin: 0 }}>List of Licenses and Registrations required</h3>
               </span>
             </summary>
             <details><summary style={{margin: '0px 0px 0px 50px'}}><span style={{ display: 'inline' }}>1. Shop licence from municipality</span></summary>
