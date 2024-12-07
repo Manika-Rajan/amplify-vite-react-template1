@@ -370,6 +370,7 @@ function App() {
               </span>
             </summary>
             <details><summary style={{margin: '0px 0px 0px 50px'}}><span style={{ display: 'inline' }}>1. Shop licence from municipality</span></summary>
+            <p>&emsp;&emsp;&emsp;&emsp;procedure link : <a>https://www.ghmc.gov.in/Trade.aspx</a></p>
             <p>&emsp;&emsp;&emsp;&emsp;<u>DOCUMENTS REQUIRED:</u></p>
             <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<u>ID proof</u></p>
             <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;1.	Aadhaar Card – Individual</p>
