@@ -480,7 +480,7 @@ function App() {
               <details>
             <summary style={{margin: '0px 0px 0px 50px'}}>
               <span style={{ display: 'inline' }}>
-                <p style={{ display: 'inline', margin: 0 }}>9. Local traders for Dals, pulses & Oils</p>
+                <p style={{ display: 'inline', margin: 0 }}>9. Local traders for Dals, pulses, Oils and All General products</p>
               </span>
             </summary>
             <table style={{ width: '100%', borderCollapse: 'collapse', border: '1px solid #ccc' }}>
