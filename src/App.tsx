@@ -299,6 +299,15 @@ function App() {
             </table>
           </details>
 
+          {/* New Expandable Section for Expandable Google maps Analysis Link */}
+            <details>
+            <summary>
+              <span style={{ display: 'inline' }}>
+                <h3 style={{ display: 'inline', margin: 0 }}>Google maps Analysis Link</h3>
+              </span>
+            </summary>
+<a href="https://www.google.com/maps/d/edit?mid=1qv6ZVRfqWDCUpMEzuGsc2xyAmrF2FLk&ll=17.47797239283841%2C78.34848710200289&z=14">https://www.google.com/maps/d/edit?mid=1qv6ZVRfqWDCUpMEzuGsc2xyAmrF2FLk&ll=17.47797239283841%2C78.34848710200289&z=14</a>
+              <details>
           {/* New Expandable Section for List of Products generally held in a Super Market */}
           <details>
             <summary>
