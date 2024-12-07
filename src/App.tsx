@@ -370,7 +370,7 @@ function App() {
               </span>
             </summary>
             <details><summary style={{margin: '0px 0px 0px 50px'}}><span style={{ display: 'inline' }}>1. Shop licence from municipality</span></summary>
-            <p>&emsp;&emsp;&emsp;&emsp;procedure link : <a>https://www.ghmc.gov.in/Trade.aspx</a></p>
+            <p>&emsp;&emsp;&emsp;&emsp;procedure link : <u>https://www.ghmc.gov.in/Trade.aspx</u></p>
             <p>&emsp;&emsp;&emsp;&emsp;<u>DOCUMENTS REQUIRED:</u></p>
             <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<u>ID proof</u></p>
             <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;1.	Aadhaar Card – Individual</p>
@@ -378,6 +378,7 @@ function App() {
             <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<u>Address proof</u></p>
             <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;3.	Lease Deed/Legal Occupancy</p></details>
             <details><summary style={{margin: '0px 0px 0px 50px'}}><span style={{ display: 'inline' }}>2. Labour licence for staff</span></summary></details>
+            <p>&emsp;&emsp;&emsp;&emsp;procedure link : <u>https://labour.telangana.gov.in/home.do</u></p>
             <details><summary style={{margin: '0px 0px 0px 50px'}}><span style={{ display: 'inline' }}>3. Weighing machine licence</span></summary></details>
             <details><summary style={{margin: '0px 0px 0px 50px'}}><span style={{ display: 'inline' }}>4. GST registration if we are expecting more than 40lakhs Turnover per year</span></summary></details>
             <details><summary style={{margin: '0px 0px 0px 50px'}}><span style={{ display: 'inline' }}>5. Trade License from the municipal authority</span></summary>
