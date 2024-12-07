@@ -379,7 +379,7 @@ function App() {
             <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;3.	Lease Deed/Legal Occupancy</p></details>
             <details><summary style={{margin: '0px 0px 0px 50px'}}><span style={{ display: 'inline' }}>2. Labour licence for staff</span></summary></details>
             <p>&emsp;&emsp;&emsp;&emsp;procedure link : <u>https://labour.telangana.gov.in/home.do</u></p>
-            <details><summary style={{margin: '0px 0px 0px 50px'}}><span style={{ display: 'inline' }}>3. Weighing machine licence</span></summary></details>
+            <details><summary style={{margin: '0px 0px 0px 50px'}}><span style={{ display: 'inline' }}>3. Weighing machine licence</span></summary>
             <p>&emsp;&emsp;&emsp;&emsp;The license application shall be entertained in the prescribed form along with the supporting documents / papers etc., required for the particular license i.e. manufacturer, repairer or sale of Weights and Measures. In case of Mini Super Market, we would have apply as a dealer.</p>
             <p>&emsp;&emsp;&emsp;&emsp;procedure link : <u>https://tglm.cgg.gov.in/home.do</u></p>
             <p>&emsp;&emsp;&emsp;&emsp;<u>DOCUMENTS REQUIRED:</u></p>
