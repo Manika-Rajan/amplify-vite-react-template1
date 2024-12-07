@@ -388,7 +388,9 @@ function App() {
             <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.	PAN/Incorporation Certificate - Business</p>
             <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<u>Address proof</u></p>
             <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;3.	Lease Deed/Legal Occupancy</p></details>      
-            <details><summary style={{margin: '0px 0px 0px 50px'}}><span style={{ display: 'inline' }}>4. GST registration if we are expecting more than 40lakhs Turnover per year</span></summary></details>
+            <details><summary style={{margin: '0px 0px 0px 50px'}}><span style={{ display: 'inline' }}>4. GST registration if we are expecting more than 40lakhs Turnover per year</span></summary>
+            <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;https://www.gst.gov.in/</p>
+            </details>
             <details><summary style={{margin: '0px 0px 0px 50px'}}><span style={{ display: 'inline' }}>5. Trade License from the municipal authority</span></summary>
                           <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;1.	Important Points</p>
                           <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(a)  It takes atleast 8 days to obtain a trade license from the local municipal authority. </p>
