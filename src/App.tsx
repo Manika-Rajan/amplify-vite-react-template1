@@ -624,7 +624,7 @@ function App() {
           <p><strong>Previous Work Experience:</strong> {clientDetails.PreviousWE}</p>
           <p><strong>Project Start Date:</strong> {clientDetails.startDate}</p>
           <p><strong>Project End Date:</strong> {clientDetails.endDate}</p>
-          <p><strong>info Support End Date:</strong> {clientDetails.infosupportendDate}</p>
+          <p><strong>Post Support till :</strong> {clientDetails.infosupportendDate}</p>
         </div>
 
         {/* Final Report */}
