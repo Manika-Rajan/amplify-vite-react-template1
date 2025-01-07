@@ -418,7 +418,7 @@ function App() {
           <details>
             <summary>
               <span style={{ display: 'inline' }}>
-                <h3 style={{ display: 'inline', margin: 0 }}>Products Sourcing Leads: list of dealers, suppliers, stockists</h3> (work in Progress)
+                <h3 style={{ display: 'inline', margin: 0 }}>Products Sourcing Leads: list of dealers, suppliers, stockists</h3>
               </span>
             </summary>
             <p>&emsp;&emsp;List of Company distributors</p>
