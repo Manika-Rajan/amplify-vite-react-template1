@@ -50,7 +50,8 @@ function App() {
     Education: "Masters in Organic Chemistry",
     PreviousWE: "3+ years in hetero drugs",
     startDate: "2024-10-17",
-    endDate: "2024-11-21"
+    endDate: "2024-11-21",
+    infosupportendDate: "2025-12-09"
   };
 
   // State for storing the fetched table data
@@ -623,6 +624,7 @@ function App() {
           <p><strong>Previous Work Experience:</strong> {clientDetails.PreviousWE}</p>
           <p><strong>Project Start Date:</strong> {clientDetails.startDate}</p>
           <p><strong>Project End Date:</strong> {clientDetails.endDate}</p>
+          <p><strong>info Support End Date:</strong> {clientDetails.infosupportendDate}</p>
         </div>
 
         {/* Final Report */}
